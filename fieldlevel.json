@@ -1,0 +1,20 @@
+{
+  "source": "fieldlevel",
+  "profileUrl": "https://www.fieldlevel.com/app/profile/syed.umerhannan.2705490/soccermen",
+  "apiUrl": "https://www.fieldlevel.com/api/profileapi/profilev2/syed.umerhannan.2705490?sport=soccermen&profileInteractionContextEnum=4",
+  "updatedAt": "2026-09-28T08:09:58Z",
+  "displayName": "Syed Umer Hannan",
+  "positions": "M, D",
+  "sport": "Men's Soccer",
+  "height": "5' 6\"",
+  "weightLbs": 135.0,
+  "city": "Jeddah",
+  "state": "Makkah Province",
+  "gradYear": 2024,
+  "dominantFoot": "Right-footed",
+  "hobbies": "Medical Reaearcher and Programmer",
+  "team": "Batterjee Medical College Team",
+  "teamType": "Club/Travel",
+  "teamStart": "2026-07-31",
+  "commitment": "Uncommitted"
+}

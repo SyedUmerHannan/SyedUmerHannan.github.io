@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" width="520" height="300" role="img" aria-label="Minecraft city with redstone">
+  <defs>
+    <pattern id="dirt" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#6B4F2A"/>
+      <rect width="4" height="4" fill="#7A5A32"/>
+      <rect x="4" y="4" width="4" height="4" fill="#5C4222"/>
+    </pattern>
+    <pattern id="grass" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#5B8C3E"/>
+      <rect width="4" height="4" fill="#6FA046"/>
+      <rect x="4" y="4" width="4" height="4" fill="#4E7A34"/>
+    </pattern>
+    <pattern id="stone" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#8A8A8A"/>
+      <rect width="4" height="4" fill="#9A9A9A"/>
+      <rect x="4" y="4" width="4" height="4" fill="#7A7A7A"/>
+    </pattern>
+    <pattern id="wood" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#8B5A2B"/>
+      <rect width="8" height="2" fill="#A06A35"/>
+      <rect y="4" width="8" height="2" fill="#7A4A22"/>
+    </pattern>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- sky gradient bands -->
+  <rect width="520" height="210" fill="#6BB8D6"/>
+  <rect y="120" width="520" height="50" fill="#8FCBE0"/>
+  <rect y="170" width="520" height="40" fill="#B8DCE8"/>
+  <!-- sun -->
+  <rect x="430" y="24" width="28" height="28" fill="#F7E27A"/>
+  <rect x="436" y="18" width="16" height="6" fill="#F7E27A" opacity="0.5"/>
+  <!-- clouds -->
+  <rect x="36" y="40" width="56" height="10" fill="#F5FAFC"/>
+  <rect x="44" y="30" width="40" height="10" fill="#F5FAFC"/>
+  <rect x="220" y="52" width="64" height="10" fill="#EAF3F7"/>
+  <rect x="228" y="42" width="48" height="10" fill="#EAF3F7"/>
+  <rect x="340" y="36" width="40" height="8" fill="#F0F7FA"/>
+  <!-- ground -->
+  <rect y="210" width="520" height="18" fill="url(#grass)"/>
+  <rect y="228" width="520" height="72" fill="url(#dirt)"/>
+  <!-- redstone path with glow -->
+  <g filter="url(#glow)"><animate attributeName="opacity" values="0.75;1;0.75" dur="1.4s" repeatCount="indefinite"/>
+    <rect x="20" y="206" width="10" height="5" fill="#E53935"/>
+    <rect x="36" y="206" width="10" height="5" fill="#FF5252"/>
+    <rect x="52" y="206" width="10" height="5" fill="#E53935"/>
+    <rect x="68" y="206" width="10" height="5" fill="#FF5252"/>
+    <rect x="84" y="206" width="10" height="5" fill="#C62828"/>
+    <rect x="100" y="206" width="10" height="5" fill="#FF5252"/>
+    <rect x="116" y="206" width="10" height="5" fill="#E53935"/>
+    <rect x="128" y="190" width="5" height="20" fill="#FF5252"/>
+    <rect x="128" y="170" width="5" height="20" fill="#E53935"/>
+    <rect x="128" y="150" width="5" height="20" fill="#FF5252"/>
+    <rect x="128" y="138" width="18" height="5" fill="#FF5252"/>
+  </g>
+  <!-- house -->
+  <g transform="translate(28,140)">
+    <rect width="72" height="70" fill="url(#wood)"/>
+    <rect y="-18" width="72" height="18" fill="#5D4037"/>
+    <rect x="8" y="20" width="18" height="18" fill="#81D4FA"/>
+    <rect x="46" y="20" width="18" height="18" fill="#81D4FA"/>
+    <rect x="28" y="42" width="16" height="28" fill="#4E342E"/>
+  </g>
+  <!-- stone tower + lamp -->
+  <g transform="translate(118,50)">
+    <rect width="44" height="160" fill="url(#stone)"/>
+    <rect y="-14" width="44" height="14" fill="#5D4037"/>
+    <rect x="8" y="20" width="12" height="12" fill="#81D4FA"/>
+    <rect x="24" y="52" width="12" height="12" fill="#81D4FA"/>
+    <rect x="8" y="84" width="12" height="12" fill="#81D4FA"/>
+    <rect x="24" y="116" width="12" height="12" fill="#81D4FA"/>
+    <rect x="14" y="6" width="16" height="12" fill="#FFEE58" filter="url(#glow)"/>
+  </g>
+  <!-- green mid -->
+  <g transform="translate(178,100)">
+    <rect width="80" height="110" fill="#6FA046"/>
+    <rect width="80" height="110" fill="url(#stone)" opacity="0.3"/>
+    <rect y="-16" width="80" height="16" fill="#558B2F"/>
+    <rect x="10" y="18" width="18" height="18" fill="#B3E5FC"/>
+    <rect x="36" y="18" width="18" height="18" fill="#B3E5FC"/>
+    <rect x="62" y="18" width="10" height="18" fill="#B3E5FC"/>
+    <rect x="10" y="50" width="18" height="18" fill="#B3E5FC"/>
+    <rect x="36" y="50" width="18" height="18" fill="#B3E5FC"/>
+    <rect x="28" y="84" width="24" height="26" fill="#4E342E"/>
+  </g>
+  <!-- tall dark tower -->
+  <g transform="translate(274,20)">
+    <rect width="52" height="190" fill="#6D4C41"/>
+    <rect width="52" height="190" fill="url(#wood)" opacity="0.45"/>
+    <rect y="-14" width="52" height="14" fill="#3E2723"/>
+    <rect x="8" y="24" width="14" height="14" fill="#4FC3F7"/>
+    <rect x="30" y="24" width="14" height="14" fill="#4FC3F7"/>
+    <rect x="8" y="58" width="14" height="14" fill="#4FC3F7"/>
+    <rect x="30" y="58" width="14" height="14" fill="#4FC3F7"/>
+    <rect x="8" y="92" width="14" height="14" fill="#4FC3F7"/>
+    <rect x="30" y="92" width="14" height="14" fill="#4FC3F7"/>
+    <rect x="8" y="126" width="14" height="14" fill="#4FC3F7"/>
+    <rect x="30" y="126" width="14" height="14" fill="#4FC3F7"/>
+  </g>
+  <!-- plaza -->
+  <g transform="translate(340,118)">
+    <rect width="100" height="92" fill="url(#stone)"/>
+    <rect y="-16" width="100" height="16" fill="#616161"/>
+    <rect x="12" y="16" width="22" height="22" fill="#81D4FA"/>
+    <rect x="42" y="16" width="22" height="22" fill="#81D4FA"/>
+    <rect x="72" y="16" width="18" height="22" fill="#81D4FA"/>
+    <rect x="38" y="54" width="26" height="38" fill="#5D4037"/>
+  </g>
+  <!-- tree -->
+  <g transform="translate(456,162)">
+    <rect x="14" y="28" width="10" height="20" fill="#5D4037"/>
+    <rect width="38" height="36" fill="#2E7D32"/>
+    <rect x="6" y="10" width="26" height="28" fill="#43A047"/>
+  </g>
+  <!-- torch -->
+  <g transform="translate(104,186)" filter="url(#glow)"><animate attributeName="opacity" values="0.7;1;0.85;1" dur="0.9s" repeatCount="indefinite"/>
+    <rect x="6" y="14" width="5" height="14" fill="#5D4037"/>
+    <rect x="4" y="4" width="9" height="10" fill="#FF7043"/>
+    <rect x="6" y="0" width="5" height="5" fill="#FFEE58"/>
+  </g>
+  <!-- tiny sheep-ish block -->
+  <g transform="translate(200,198)">
+    <rect width="14" height="10" fill="#F5F5F5"/>
+    <rect x="10" y="2" width="6" height="6" fill="#212121"/>
+  </g>
+</svg>

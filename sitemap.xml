@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>/</loc><changefreq>monthly</changefreq></url>
+  <url><loc>/blog.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>/cv.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>/publications.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>/research.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>/achievements.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>/side-quests.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>/news.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>/contact.html</loc><changefreq>monthly</changefreq></url>
+</urlset>

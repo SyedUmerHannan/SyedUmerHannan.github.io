@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /private.html
+
+# Replace example.com with your real domain in sitemap.xml
+Sitemap: /sitemap.xml

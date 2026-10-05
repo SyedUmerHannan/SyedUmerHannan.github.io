@@ -1,13 +1,13 @@
 {
   "username": "SyedUHannan",
   "name": "Syed Umer Hannan",
-  "streak": 495,
-  "totalXp": 90470,
+  "streak": 497,
+  "totalXp": 90661,
   "learningLanguage": "fr",
   "courses": [
     {
       "title": "French",
-      "xp": 86270,
+      "xp": 86461,
       "learningLanguage": "fr"
     },
     {
@@ -18,5 +18,5 @@
   ],
   "profileUrl": "https://www.duolingo.com/u/SyedUHannan",
   "widgetSvg": "https://duolingo-stats-card.vercel.app/api?username=SyedUHannan&theme=forest",
-  "updatedAt": "2026-10-04T11:39:16Z"
+  "updatedAt": "2026-10-05T13:19:17Z"
 }

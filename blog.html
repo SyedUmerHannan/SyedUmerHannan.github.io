@@ -721,22 +721,8 @@ body.dark-mode .achievement-item{border-bottom-color:var(--paper3)}
 <p class="series-desc">Essays on why the adult heart stops regenerating, what evolution traded away, and what it would take to get that capacity back. On Substack.</p>
 </div>
 </div>
-<a class="card card-link card-featured" href="https://syedumerhannan.substack.com/p/the-heart-regeneration-problem" target="_blank" rel="noopener noreferrer">
-<div class="featured-label">Featured · Series #1</div>
-<div class="card-date">Substack · Sep 26, 2026</div>
-<div class="card-title">The Heart Regeneration Problem</div>
-<div class="card-body">First essay in The Regenerative Edge. Why the adult human heart forgot how to heal itself, and what it would take to remind it: four locks that close after birth, and what the animals that still regenerate can teach us.</div>
-</a>
-<a class="card card-link" href="https://medium.com/@syedumerhannan/what-would-have-to-be-true-for-cardiology-to-change-by-2040-6a5a645646ea" target="_blank" rel="noopener noreferrer">
-<div class="card-date">Medium · Sep 2026</div>
-<div class="card-title">What would have to be true for cardiology to change by 2040</div>
-<div class="card-body">A data-first bet on which parts of the heart’s future are real: liver-first editing, cardiac gene therapy, digital twins, and regeneration — marked guesses included.</div>
-</a>
-<a class="card card-link" href="https://medium.com/@syedumerhannan/when-your-doctor-goes-direct-where-do-the-other-1-600-patients-go-3e24d0494d54" target="_blank" rel="noopener noreferrer">
-<div class="card-date">Medium · 2026</div>
-<div class="card-title">When your doctor goes direct: where do the other 1,600 patients go?</div>
-<div class="card-body">On direct primary care, access, and what happens to the patients who are not in the room.</div>
-</a>
+<div id="substack-cards"></div>
+<div id="medium-cards"></div>
 <div class="series-banner">
 <div class="series-inner">
 <div class="series-label-tag">Concluded Series</div>
@@ -806,5 +792,44 @@ function toggleTheme(){
 var el=document.getElementById('last-updated-date'); if(el) el.textContent='Sep 2026';
 
 </script>
+
+<script>
+(function(){
+  function esc(s){return String(s||'').replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+  function card(item, featured){
+    var meta = item.source + (item.date_human ? ' · ' + item.date_human : '');
+    if(item.series_number) meta += ' · Series #' + item.series_number;
+    var label = featured ? '<div class="featured-label">Featured · Series #' + esc(item.series_number) + '</div>' : '';
+    var cls = featured ? 'card card-link card-featured' : 'card card-link';
+    return '<a class="' + cls + '" href="' + esc(item.url) + '" target="_blank" rel="noopener noreferrer">' +
+      label +
+      '<div class="card-date">' + esc(meta) + '</div>' +
+      '<div class="card-title">' + esc(item.title) + '</div>' +
+      (item.summary ? '<div class="card-body">' + esc(item.summary) + '</div>' : '') +
+      '</a>';
+  }
+  fetch('data/writing.json').then(function(r){return r.json();}).then(function(data){
+    var sub = data.substack || [];
+    var med = data.medium || [];
+    var subEl = document.getElementById('substack-cards');
+    var medEl = document.getElementById('medium-cards');
+    if(subEl){
+      if(!sub.length){ subEl.innerHTML = '<p class="card-body">No Substack posts loaded yet.</p>'; }
+      else {
+        var html = card(sub[0], true);
+        for(var i=1;i<sub.length;i++) html += card(sub[i], false);
+        subEl.innerHTML = html;
+      }
+    }
+    if(medEl){
+      // skip medium posts that are pure CardioRegen weeks if we still list them under concluded series below - still show all for completeness, or filter
+      var html = '';
+      med.forEach(function(item){ html += card(item, false); });
+      medEl.innerHTML = html;
+    }
+  }).catch(function(e){ console.warn('writing.json', e); });
+})();
+</script>
+
 </body>
 </html>

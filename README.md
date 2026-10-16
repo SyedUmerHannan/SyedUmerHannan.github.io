@@ -8,14 +8,18 @@ Static site for [syedumerhannan.github.io](https://syedumerhannan.github.io).
 python3 -m http.server 8080
 ```
 
-## Refresh FieldLevel + Duolingo widgets
+## Data refresh (writing, publications, widgets)
 
 ```bash
-python3 scripts/update_side_quests.py
+python3 scripts/update_writing.py        # Substack + Medium RSS → data/writing.json
+python3 scripts/update_publications.py   # Scholar / Crossref / Zenodo → data/publications.json
+python3 scripts/update_side_quests.py    # FieldLevel + Duolingo
 ```
+
+Scheduled via `.github/workflows/update-widgets.yml`.
+
+**Note:** ResearchGate blocks automated read counts. Set `researchgate_reads` on a paper in `data/publications.json` by hand if you want those numbers shown.
 
 ## GitHub Pages
 
 Settings → Pages → Deploy from branch `main` / root.
-
-Scheduled refresh: `.github/workflows/update-widgets.yml`.

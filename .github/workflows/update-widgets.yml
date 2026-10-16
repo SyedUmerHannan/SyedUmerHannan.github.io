@@ -1,4 +1,4 @@
-name: Update side-quest widgets
+name: Refresh site data
 
 on:
   schedule:
@@ -16,16 +16,22 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Refresh FieldLevel + Duolingo data
+      - name: Refresh FieldLevel + Duolingo
         run: python3 scripts/update_side_quests.py
+        continue-on-error: true
+      - name: Refresh Substack + Medium writing
+        run: python3 scripts/update_writing.py
+      - name: Refresh publications metrics
+        run: python3 scripts/update_publications.py
+        continue-on-error: true
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/fieldlevel.json data/duolingo.json || true
+          git add data/ || true
           if git diff --staged --quiet; then
             echo "No data changes"
           else
-            git commit -m "chore: refresh side-quest widget data"
+            git commit -m "chore: refresh writing and publications data"
             git push
           fi

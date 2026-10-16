@@ -1,0 +1,16 @@
+{
+  "athleteId": "201168411",
+  "profileUrl": "https://www.strava.com/athletes/201168411",
+  "displayName": "Syed Umer Hannan",
+  "location": "Saudi Arabia",
+  "first5k": "Ma'alem Marathon \u00b7 2026",
+  "focus": "Building toward half / marathon",
+  "stats": {
+    "activities": null,
+    "distance_km": null,
+    "moving_time_hours": null,
+    "elevation_m": null
+  },
+  "note": "Strava hides detailed totals from logged-out scrapers. Fill stats by hand or connect a Strava API token later.",
+  "updatedAt": "2026-10-16T23:50:24Z"
+}

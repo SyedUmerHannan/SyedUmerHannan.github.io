@@ -959,6 +959,38 @@ body.dark-mode .page-title{color:var(--ink) !important;}
 body.dark-mode a:not(.sidebar-nav a):not(.btn):not(.pill-cta){color:#E8A07A;}
 body.dark-mode footer{color:var(--ink3) !important;}
 
+
+/* Cream surfaces: always dark ink (readable in dark mode) */
+body.dark-mode .tools-prompt,
+body.dark-mode .tools-panel,
+body.dark-mode .vs-card,
+body.dark-mode .tools-prompt-text strong,
+body.dark-mode .tools-prompt-sub,
+body.dark-mode .tools-prompt-chevron{
+  color:#112909 !important;
+}
+body.dark-mode .tools-prompt-sub{color:#5a6b4a !important;opacity:1 !important;}
+body.dark-mode .tools-prompt-text strong{opacity:1 !important;}
+body.dark-mode .tools-prompt{
+  background:linear-gradient(145deg,#f8ead6 0%,#f3dbc1 100%) !important;
+  border-color:#e0c9a8 !important;
+}
+body.dark-mode .tools-panel{
+  background:#f8ead6 !important;
+  border-color:#e0c9a8 !important;
+  color:#112909 !important;
+}
+body.dark-mode .vs-card{
+  background:#fff8ee !important;
+  border-color:#e0c9a8 !important;
+  color:#112909 !important;
+}
+body.dark-mode .vs-name{color:#112909 !important;}
+body.dark-mode .vs-layer{color:#a04a0d !important;}
+body.dark-mode .vs-blurb{color:#2a3d1f !important;}
+body.dark-mode .stack-foot{color:#5a6b4a !important;}
+body.dark-mode .stack-foot a{color:#a04a0d !important;}
+
 </style>
 </head>
 <body>
@@ -1039,10 +1071,13 @@ body.dark-mode footer{color:var(--ink3) !important;}
       <div class="sport-board-brand">Strava · Running</div>
     </div>
     <div class="sport-board-title">Training log</div>
-    <ul class="sport-board-stats">
+    <ul class="sport-board-stats" id="strava-stats">
       <li><span>First 5K</span><strong>Ma'alem Marathon · 2026</strong></li>
       <li><span>Focus</span><strong>Building toward half / marathon</strong></li>
-      <li><span>Profile</span><strong><a href="https://www.strava.com/athletes/201168411" target="_blank" rel="noopener noreferrer">athletes/201168411</a></strong></li>
+      <li><span>Distance (YTD)</span><strong id="strava-distance">—</strong></li>
+      <li><span>Activities</span><strong id="strava-activities">—</strong></li>
+      <li><span>Moving time</span><strong id="strava-time">—</strong></li>
+      <li><span>Elevation</span><strong id="strava-elev">—</strong></li>
     </ul>
     <a class="btn btn-accent sport-board-btn" href="https://www.strava.com/athletes/201168411" target="_blank" rel="noopener noreferrer">Open Strava →</a>
   </div>
@@ -1088,13 +1123,13 @@ body.dark-mode footer{color:var(--ink3) !important;}
 <h2 class="section-label" style="margin-top:1.6rem;font-size:0.85rem">Duolingo</h2>
 <div class="duo-stage">
   <div class="duo-streak-orb">
-    <span class="duo-streak-num" id="duo-streak">490</span>
+    <span class="duo-streak-num" id="duo-streak">509</span>
     <span class="duo-streak-label">day streak</span>
   </div>
   <div class="duo-body">
     <p class="duo-lede">Mostly French. A bit of Ukrainian. The streak kind of took over.</p>
     <ul class="duo-stats" id="duo-stats">
-      <li><span>Total XP</span><strong id="duo-xp">84,938</strong></li>
+      <li><span>Total XP</span><strong id="duo-xp">93,016</strong></li>
       <li><span>Focus</span><strong>French</strong></li>
       <li><span>Also</span><strong>Ukrainian (barely)</strong></li>
     </ul>
@@ -1178,6 +1213,25 @@ var el=document.getElementById('last-updated-date'); if(el) el.textContent='Sep 
       if(s && d.streak!=null) s.textContent=String(d.streak);
       if(x && d.totalXp!=null) x.textContent=Number(d.totalXp).toLocaleString();
     }).catch(function(){});
+})();
+</script>
+
+
+<script>
+(function(){
+  fetch('data/strava.json?t=' + Date.now()).then(function(r){return r.json();}).then(function(d){
+    var s = (d && d.stats) || {};
+    function set(id, val, suffix){
+      var el = document.getElementById(id);
+      if(!el) return;
+      if(val == null || val === ''){ el.textContent = '—'; return; }
+      el.textContent = (typeof val === 'number' ? val.toLocaleString() : String(val)) + (suffix || '');
+    }
+    set('strava-distance', s.distance_km, ' km');
+    set('strava-activities', s.activities, '');
+    set('strava-time', s.moving_time_hours, ' h');
+    set('strava-elev', s.elevation_m, ' m');
+  }).catch(function(){});
 })();
 </script>
 

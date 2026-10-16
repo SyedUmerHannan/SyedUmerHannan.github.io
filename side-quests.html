@@ -902,6 +902,63 @@ body.dark-mode .mc-art{
   }
 }
 
+
+/* === Dark mode contrast fixes (paper panels + readable text) === */
+body.dark-mode .main{
+  --ink:#F3EEE3 !important;
+  --ink2:#D5CEC0 !important;
+  --ink3:#A79F90 !important;
+  --ink4:#7A7368 !important;
+  --paper:#14110E !important;
+  --paper2:#1C1814 !important;
+  --paper3:#2E2822 !important;
+}
+body.dark-mode .atlas-stage,
+body.dark-mode .constellation-svg,
+body.dark-mode .constellation-panel,
+body.dark-mode .atlas-node{
+  /* keep map as a lit paper surface so node text stays dark and readable */
+  color:#112909;
+}
+body.dark-mode .atlas-stage{background:#f8ead6 !important;}
+body.dark-mode .atlas-node{
+  background:rgba(255,250,242,0.97) !important;
+  color:#112909 !important;
+  border-color:rgba(160,74,13,0.28) !important;
+}
+body.dark-mode .atlas-node .node-kicker,
+body.dark-mode .atlas-node .node-label,
+body.dark-mode .atlas-guide{color:#5a6b4a !important;}
+body.dark-mode .atlas-node strong,
+body.dark-mode .atlas-node .node-title{color:#112909 !important;}
+body.dark-mode .constellation-panel{
+  background:#f8ead6 !important;
+  border-color:#a04a0d !important;
+  color:#112909 !important;
+}
+body.dark-mode .panel-title{color:#112909 !important;opacity:1 !important;}
+body.dark-mode .panel-body{color:#2a3d1f !important;opacity:1 !important;}
+body.dark-mode .panel-num{color:#a04a0d !important;}
+body.dark-mode .panel-tags span{background:#f3dbc1 !important;color:#112909 !important;border-color:#e0c9a8 !important;}
+body.dark-mode .panel-link a{color:#a04a0d !important;}
+body.dark-mode .research-lede,
+body.dark-mode .blog-lede,
+body.dark-mode .prose-block p,
+body.dark-mode .card-body{color:var(--ink2) !important;}
+body.dark-mode .card,
+body.dark-mode .card-featured{
+  background:var(--paper2) !important;
+  color:var(--ink) !important;
+  border-color:var(--paper3) !important;
+}
+body.dark-mode .card-title{color:var(--ink) !important;}
+body.dark-mode .card-date,
+body.dark-mode .card-tag{color:var(--ink3) !important;}
+body.dark-mode .section-label,
+body.dark-mode .page-title{color:var(--ink) !important;}
+body.dark-mode a:not(.sidebar-nav a):not(.btn):not(.pill-cta){color:#E8A07A;}
+body.dark-mode footer{color:var(--ink3) !important;}
+
 </style>
 </head>
 <body>

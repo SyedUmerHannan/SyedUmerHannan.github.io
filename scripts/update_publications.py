@@ -71,6 +71,40 @@ def main():
                 p.update(meta)
         pubs.append(p)
 
+    # Known Zenodo deposits (datasets/software) kept even if Scholar omits them
+    KNOWN_ZENODO = [
+        {
+            "title": "Species-Resolved Citation Network Data for Cardiac Regeneration Research, 2000–2026",
+            "year": "2026", "doi": "10.5281/zenodo.23635668", "type": "dataset",
+            "summary": "Citation-network data and code for cross-species cardiac regeneration bibliometrics.",
+        },
+        {
+            "title": "Transdifferentiation Topic Dynamics in Bone-Marrow Cardiac Regeneration: Data and Analysis",
+            "year": "2026", "doi": "10.5281/zenodo.23634334", "type": "dataset",
+            "summary": "Derived data and analysis code for transdifferentiation-topic dynamics, 2000–2025.",
+        },
+        {
+            "title": "ElectroTrace: reproducible ECG/electrophysiology annotation and benchmarking",
+            "year": "2026", "doi": "10.5281/zenodo.23188384", "type": "software",
+            "summary": "ECG/electrophysiology annotation, detector benchmarking, leakage-aware validation.",
+        },
+        {
+            "title": "Target-Specific Partial Identification for Cardiomyocyte Regeneration Assays: Bounds, Sensitivity Analyses, and Design Implications",
+            "year": "2026", "doi": "10.5281/zenodo.23169639", "type": "preprint",
+            "summary": "Partial-identification framework for cardiomyocyte regeneration assays.",
+        },
+    ]
+    have = {(p.get("doi") or "").lower() for p in pubs}
+    for item in KNOWN_ZENODO:
+        if item["doi"].lower() not in have:
+            pubs.append({
+                "title": item["title"], "year": item["year"], "citations": 0,
+                "citations_source": "OpenAlex", "scholar_url": SCHOLAR,
+                "url": "https://doi.org/" + item["doi"], "doi": item["doi"],
+                "venue": "Zenodo", "type": item["type"], "summary": item.get("summary"),
+                "researchgate_reads": None, "reads": None, "reads_source": None,
+            })
+
     try:
         z = json.loads(fetch("https://zenodo.org/api/records/22680867"))
         stats = z.get("stats") or {}

@@ -2,6 +2,9 @@
 
 <html lang="en">
 <head>
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml"/>
+<link rel="alternate icon" href="img/favicon.svg"/>
+<meta name="theme-color" content="#112909"/>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="Syed Umer Hannan, MD student at Batterjee Medical College working on cardiac regenerative medicine, stem-cell approaches, and open research tools. Founder of Virelion Biotech." name="description"/>
@@ -12,7 +15,6 @@
 <meta content="summary" name="twitter:card"/>
 <meta content="@syedumerhannan" name="twitter:site"/>
 <meta content="@syedumerhannan" name="twitter:creator"/>
-<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%AB%80%3C/text%3E%3C/svg%3E" rel="icon"/>
 <title>Syed Umer Hannan</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -1527,6 +1529,183 @@ body.dark-mode .vs-blurb{color:#2a3d1f !important;}
 body.dark-mode .stack-foot{color:#5a6b4a !important;}
 body.dark-mode .stack-foot a{color:#a04a0d !important;}
 
+
+/* Auto-scrolling recent news in home sidebar */
+.sidebar-news{
+  margin:0.35rem 0.85rem 0.55rem;
+  padding:0.55rem 0.6rem 0.65rem;
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,0.1);
+  background:rgba(0,0,0,0.18);
+  flex-shrink:0;
+}
+.sidebar-news-head{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:0.4rem;padding:0 0.15rem;
+}
+.sidebar-news-label{
+  font-family:var(--mono);
+  font-size:0.58rem;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:rgba(232,220,200,0.55);
+}
+.sidebar-news-all{
+  font-family:var(--mono);
+  font-size:0.58rem;
+  letter-spacing:0.04em;
+  color:rgba(224,122,95,0.95);
+  text-decoration:none;
+}
+.sidebar-news-all:hover{color:#fff}
+.sidebar-news-viewport{
+  height:7.2rem;
+  overflow:hidden;
+  mask-image:linear-gradient(to bottom, transparent 0%, #000 12%, #000 88%, transparent 100%);
+  -webkit-mask-image:linear-gradient(to bottom, transparent 0%, #000 12%, #000 88%, transparent 100%);
+}
+.sidebar-news-track{
+  display:flex;
+  flex-direction:column;
+  gap:0.35rem;
+  animation:sidebarNewsScroll 28s linear infinite;
+}
+.sidebar-news:hover .sidebar-news-track,
+.sidebar-news:focus-within .sidebar-news-track{
+  animation-play-state:paused;
+}
+.sidebar-news-item{
+  display:block;
+  padding:0.4rem 0.45rem;
+  border-radius:7px;
+  text-decoration:none;
+  border:1px solid transparent;
+  transition:background .2s, border-color .2s;
+}
+.sidebar-news-item:hover{
+  background:rgba(160,74,13,0.18);
+  border-color:rgba(160,74,13,0.35);
+}
+.sidebar-news-date{
+  display:block;
+  font-family:var(--mono);
+  font-size:0.55rem;
+  letter-spacing:0.06em;
+  color:rgba(232,220,200,0.45);
+  margin-bottom:0.12rem;
+}
+.sidebar-news-title{
+  display:block;
+  font-family:var(--mono);
+  font-size:0.68rem;
+  line-height:1.35;
+  color:rgba(245,241,232,0.88);
+}
+@keyframes sidebarNewsScroll{
+  0%{transform:translateY(0)}
+  100%{transform:translateY(-50%)}
+}
+@media (prefers-reduced-motion: reduce){
+  .sidebar-news-track{animation:none}
+  .sidebar-news-viewport{height:auto;max-height:9rem;overflow-y:auto;mask-image:none;-webkit-mask-image:none}
+}
+/* If light-theme sidebar overrides exist, keep ticker readable on dark panel */
+body:not(.dark-mode) .sidebar-news{
+  background:rgba(17,41,9,0.06);
+  border-color:rgba(17,41,9,0.12);
+}
+body:not(.dark-mode) .sidebar-news-label{color:rgba(17,41,9,0.45)}
+body:not(.dark-mode) .sidebar-news-title{color:#112909}
+body:not(.dark-mode) .sidebar-news-date{color:rgba(17,41,9,0.4)}
+body:not(.dark-mode) .sidebar-news-all{color:#a04a0d}
+
+
+.sidebar{display:flex;flex-direction:column}
+.sidebar-nav{flex:1 1 auto;min-height:0}
+.sidebar-news{order:0}
+
+
+
+/* News panel in city map place */
+.home-news-panel{
+  max-width:920px;
+  margin:0 0 2rem;
+}
+.home-news-panel-inner{
+  border:1.5px solid var(--paper3);
+  border-radius:16px;
+  background:linear-gradient(165deg,#fff8ee 0%, #f3dbc1 100%);
+  padding:1.1rem 1.15rem 1.2rem;
+  box-shadow:0 12px 28px -16px rgba(17,41,9,0.25);
+}
+.home-news-head{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:0.75rem;padding:0 0.2rem;
+}
+.home-news-kicker{
+  font-family:var(--mono);font-size:0.65rem;letter-spacing:0.12em;
+  text-transform:uppercase;color:#a04a0d;font-weight:600;
+}
+.home-news-all{
+  font-family:var(--mono);font-size:0.65rem;color:#5a6b4a;text-decoration:none;
+}
+.home-news-all:hover{color:#a04a0d}
+.home-news-viewport{
+  height:320px;
+  overflow:hidden;
+  mask-image:linear-gradient(to bottom, transparent 0%, #000 8%, #000 92%, transparent 100%);
+  -webkit-mask-image:linear-gradient(to bottom, transparent 0%, #000 8%, #000 92%, transparent 100%);
+}
+.home-news-track{
+  display:flex;flex-direction:column;gap:0.55rem;
+  animation:homeNewsScroll 32s linear infinite;
+}
+.home-news-panel:hover .home-news-track,
+.home-news-panel:focus-within .home-news-track{animation-play-state:paused}
+.home-news-item{
+  display:block;
+  padding:0.75rem 0.9rem;
+  border-radius:11px;
+  background:rgba(255,255,255,0.78);
+  border:1px solid rgba(160,74,13,0.12);
+  text-decoration:none;color:inherit;
+  transition:border-color .2s, transform .2s, background .2s;
+}
+.home-news-item:hover{
+  border-color:rgba(160,74,13,0.4);
+  background:#fff;
+  transform:translateY(-1px);
+}
+.home-news-date{
+  display:block;font-family:var(--mono);font-size:0.6rem;
+  letter-spacing:0.06em;color:#5a6b4a;margin-bottom:0.25rem;
+}
+.home-news-title{
+  display:block;font-family:var(--display);font-size:1rem;
+  font-weight:600;color:#112909;line-height:1.3;margin-bottom:0.28rem;
+}
+.home-news-body{
+  display:block;font-size:0.82rem;line-height:1.45;color:#2a3d1f;
+}
+@keyframes homeNewsScroll{
+  0%{transform:translateY(0)}
+  100%{transform:translateY(-50%)}
+}
+@media (prefers-reduced-motion: reduce){
+  .home-news-track{animation:none}
+  .home-news-viewport{height:auto;max-height:420px;overflow-y:auto;mask-image:none;-webkit-mask-image:none}
+}
+body.dark-mode .home-news-panel-inner{
+  background:linear-gradient(165deg,#fff8ee 0%, #f3dbc1 100%) !important;
+  border-color:#e0c9a8 !important;
+}
+body.dark-mode .home-news-title{color:#112909 !important}
+body.dark-mode .home-news-body{color:#2a3d1f !important}
+body.dark-mode .home-news-date{color:#5a6b4a !important}
+body.dark-mode .home-news-item{background:rgba(255,255,255,0.85) !important;color:#112909 !important}
+/* city kept in DOM but not shown */
+.city-full[hidden], .city-full[aria-hidden="true"]{display:none !important}
+
 </style>
 </head>
 <body>
@@ -1550,6 +1729,7 @@ body.dark-mode .stack-foot a{color:#a04a0d !important;}
 <li><a href="achievements.html" id="nav-achievements"><span class="tick"></span>Achievements</a></li>
 <li><a href="side-quests.html" id="nav-quests"><span class="tick"></span>Side quests</a></li>
 
+<li><a href="press.html" id="nav-press"><span class="tick"></span>Press &amp; talks</a></li>
 <li><a href="news.html" id="nav-news"><span class="tick"></span>News</a></li>
 <li><a href="photos.html" id="nav-photos"><span class="tick"></span>Photos</a></li>
 <li><a href="contact.html" id="nav-contact"><span class="tick"></span>Contact</a></li>
@@ -1599,6 +1779,7 @@ body.dark-mode .stack-foot a{color:#a04a0d !important;}
 </header>
 <div class="container"><main id="main-content">
 <div class="page-section active" id="about" style="display:block">
+
 <div class="about-row">
   <div class="about-photo-col">
     <img alt="Headshot of Syed Umer Hannan, MD student and cardiac regenerative scientist" class="about-photo" src="img/headshot.jpg" width="220" height="220"/>
@@ -1637,7 +1818,101 @@ body.dark-mode .stack-foot a{color:#a04a0d !important;}
     </a>
   </div>
 </div>
-<div class="city-full">
+
+<section class="home-news-panel" aria-label="Recent news">
+  <div class="home-news-panel-inner">
+    <div class="home-news-head">
+      <span class="home-news-kicker">Recent</span>
+      <a class="home-news-all" href="news.html">All updates →</a>
+    </div>
+    <div class="home-news-viewport">
+      <div class="home-news-track">
+<a class="home-news-item" href="https://github.com/Virelion-Biotech/Virelion-CardiBench" target="_blank" rel="noopener noreferrer">
+  <span class="home-news-date">Oct 30, 2026</span>
+  <span class="home-news-title">Virelion · CardiBench</span>
+  <span class="home-news-body">Benchmark and dataset registry for cardiac AI evaluation.</span>
+</a>
+<a class="home-news-item" href="https://github.com/Virelion-Biotech" target="_blank" rel="noopener noreferrer">
+  <span class="home-news-date">Oct 29, 2026</span>
+  <span class="home-news-title">Virelion stack · HeartTwin, CardioScore, CardiAtlas</span>
+  <span class="home-news-body">Orchestration, cardiotoxicity scoring, and knowledge layer updates.</span>
+</a>
+<a class="home-news-item" href="https://github.com/Virelion-Biotech/Virelion-CardiAnatomy" target="_blank" rel="noopener noreferrer">
+  <span class="home-news-date">Oct 28, 2026</span>
+  <span class="home-news-title">Virelion · CardiAnatomy</span>
+  <span class="home-news-body">Patient-specific CMR/CT anatomy pipeline.</span>
+</a>
+<a class="home-news-item" href="publications.html">
+  <span class="home-news-date">Oct 25, 2026</span>
+  <span class="home-news-title">Zenodo datasets · cardiac regeneration</span>
+  <span class="home-news-body">Open citation-network and topic-dynamics data packages.</span>
+</a>
+<a class="home-news-item" href="press.html">
+  <span class="home-news-date">Oct 24, 2026</span>
+  <span class="home-news-title">ACC HealthCare Quality Week feature</span>
+  <span class="home-news-body">Short video from @ACCinTouch on the CV Management Member Section.</span>
+</a>
+<a class="home-news-item" href="https://syedumerhannan.substack.com/p/why-injecting-heart-cells-is-not" target="_blank" rel="noopener noreferrer">
+  <span class="home-news-date">Oct 14, 2026</span>
+  <span class="home-news-title">Regenerative Edge · #3</span>
+  <span class="home-news-body">Why injecting heart cells is not enough.</span>
+</a>
+<a class="home-news-item" href="https://doi.org/10.5281/zenodo.23188384" target="_blank" rel="noopener noreferrer">
+  <span class="home-news-date">Oct 6, 2026</span>
+  <span class="home-news-title">ElectroTrace on Zenodo</span>
+  <span class="home-news-body">ECG/electrophysiology annotation and benchmarking software.</span>
+</a>
+<a class="home-news-item" href="https://syedumerhannan.substack.com/p/how-to-watch-a-heart-decide" target="_blank" rel="noopener noreferrer">
+  <span class="home-news-date">Oct 4, 2026</span>
+  <span class="home-news-title">Regenerative Edge · #2</span>
+  <span class="home-news-body">How to watch a heart decide, cell by cell.</span>
+</a>
+<a class="home-news-item" href="https://github.com/Virelion-Biotech/Virelion-CardiBench" target="_blank" rel="noopener noreferrer">
+  <span class="home-news-date">Oct 30, 2026</span>
+  <span class="home-news-title">Virelion · CardiBench</span>
+  <span class="home-news-body">Benchmark and dataset registry for cardiac AI evaluation.</span>
+</a>
+<a class="home-news-item" href="https://github.com/Virelion-Biotech" target="_blank" rel="noopener noreferrer">
+  <span class="home-news-date">Oct 29, 2026</span>
+  <span class="home-news-title">Virelion stack · HeartTwin, CardioScore, CardiAtlas</span>
+  <span class="home-news-body">Orchestration, cardiotoxicity scoring, and knowledge layer updates.</span>
+</a>
+<a class="home-news-item" href="https://github.com/Virelion-Biotech/Virelion-CardiAnatomy" target="_blank" rel="noopener noreferrer">
+  <span class="home-news-date">Oct 28, 2026</span>
+  <span class="home-news-title">Virelion · CardiAnatomy</span>
+  <span class="home-news-body">Patient-specific CMR/CT anatomy pipeline.</span>
+</a>
+<a class="home-news-item" href="publications.html">
+  <span class="home-news-date">Oct 25, 2026</span>
+  <span class="home-news-title">Zenodo datasets · cardiac regeneration</span>
+  <span class="home-news-body">Open citation-network and topic-dynamics data packages.</span>
+</a>
+<a class="home-news-item" href="press.html">
+  <span class="home-news-date">Oct 24, 2026</span>
+  <span class="home-news-title">ACC HealthCare Quality Week feature</span>
+  <span class="home-news-body">Short video from @ACCinTouch on the CV Management Member Section.</span>
+</a>
+<a class="home-news-item" href="https://syedumerhannan.substack.com/p/why-injecting-heart-cells-is-not" target="_blank" rel="noopener noreferrer">
+  <span class="home-news-date">Oct 14, 2026</span>
+  <span class="home-news-title">Regenerative Edge · #3</span>
+  <span class="home-news-body">Why injecting heart cells is not enough.</span>
+</a>
+<a class="home-news-item" href="https://doi.org/10.5281/zenodo.23188384" target="_blank" rel="noopener noreferrer">
+  <span class="home-news-date">Oct 6, 2026</span>
+  <span class="home-news-title">ElectroTrace on Zenodo</span>
+  <span class="home-news-body">ECG/electrophysiology annotation and benchmarking software.</span>
+</a>
+<a class="home-news-item" href="https://syedumerhannan.substack.com/p/how-to-watch-a-heart-decide" target="_blank" rel="noopener noreferrer">
+  <span class="home-news-date">Oct 4, 2026</span>
+  <span class="home-news-title">Regenerative Edge · #2</span>
+  <span class="home-news-body">How to watch a heart decide, cell by cell.</span>
+</a>
+</div>
+    </div>
+  </div>
+</section>
+
+<div class="city-full" hidden aria-hidden="true" style="display:none !important">
   <h2 class="city-heading">Explore the city</h2>
   <p class="city-bridge">Click a building to open that part of the work.</p>
   <div class="city-wrapper">
@@ -1683,7 +1958,10 @@ body.dark-mode .stack-foot a{color:#a04a0d !important;}
         <img src="img/icons/illustrations.svg" alt=""/>
         <span class="city-label">Tools</span>
       </a>
-    </div>
+    </div><!-- /.city-layer -->
+  </div><!-- /.city-wrapper -->
+</div><!-- /.city-full -->
+</div><!-- /.page-section -->
 </main>
 <footer>© 2026 Syed Umer Hannan  ·  Cardiac Regenerative Scientist</footer>
 </div>

@@ -1,6 +1,9 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml"/>
+<link rel="alternate icon" href="img/favicon.svg"/>
+<meta name="theme-color" content="#112909"/>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="Publications and preprints by Syed Umer Hannan in bioinformatics, clinical review, and related areas." name="description"/>
@@ -11,9 +14,7 @@
 <meta content="summary" name="twitter:card"/>
 <meta content="@syedumerhannan" name="twitter:site"/>
 <meta content="@syedumerhannan" name="twitter:creator"/>
-<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%AB%80%3C/text%3E%3C/svg%3E" rel="icon"/>
 <title>Publications · Syed Umer Hannan</title>
-<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%AB%80%3C/text%3E%3C/svg%3E" rel="icon"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
@@ -337,7 +338,7 @@ body.private-mode.container{padding:0;max-width:none;margin:0}
 .cv-entry,.cv-section-head{page-break-inside:avoid}
 }
 
-.status-summary-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--paper3);border:1px solid var(--paper3);border-radius:var(--r-md);overflow:hidden;margin-top:1.2rem;margin-bottom:2rem}
+.status-summary-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--paper3);border:1px solid var(--paper3);border-radius:var(--r-md);overflow:hidden;margin-top:1.2rem;margin-bottom:2rem}
 .status-cell{background:#fff;padding:1.3rem 1.2rem;text-align:center;transition:background.25s ease}
 .status-cell:hover{background:var(--paper2)}
 .status-label{font-family:var(--mono);font-size:0.66rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink3);margin-bottom:0.6rem}
@@ -671,7 +672,7 @@ body.dark-mode .stack-foot a{color:#a04a0d !important;}
 
 .pubs-summary{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(5,1fr);
   gap:0.75rem;
   margin:0 0 1.1rem;
   padding:1.15rem 1.2rem;
@@ -734,6 +735,7 @@ body.dark-mode .pubs-summary-label{color:#5a6b4a !important;}
 <li><a href="achievements.html" id="nav-achievements"><span class="tick"></span>Achievements</a></li>
 <li><a href="side-quests.html" id="nav-quests"><span class="tick"></span>Side quests</a></li>
 
+<li><a href="press.html" id="nav-press"><span class="tick"></span>Press &amp; talks</a></li>
 <li><a href="news.html" id="nav-news"><span class="tick"></span>News</a></li>
 <li><a href="photos.html" id="nav-photos"><span class="tick"></span>Photos</a></li>
 <li><a href="contact.html" id="nav-contact"><span class="tick"></span>Contact</a></li>
@@ -783,59 +785,83 @@ body.dark-mode .pubs-summary-label{color:#5a6b4a !important;}
 <h1 class="section-label page-title">Academic output</h1>
 
 
-<p class="blog-lede" style="margin-bottom:1.2rem">Selected papers and preprints. Citation counts and Zenodo reads refresh automatically when available.</p>
+<p class="blog-lede" style="margin-bottom:1.2rem">Selected papers, software, and open datasets. DOI links go to the full record.</p>
 <div class="pub-links" style="display:flex;flex-wrap:wrap;gap:0.6rem;margin-bottom:1.4rem">
   <a class="btn" href="https://scholar.google.com/citations?user=HoDp67cAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
   <a class="btn" href="https://orcid.org/0009-0004-0282-8765" target="_blank" rel="noopener noreferrer">ORCID</a>
 </div>
 
 <div class="pubs-summary" aria-label="Publication metrics summary">
-  <div class="pubs-summary-item">
-    <span class="pubs-summary-num">4</span>
-    <span class="pubs-summary-label">Papers</span>
-  </div>
-  <div class="pubs-summary-item">
-    <span class="pubs-summary-num">0</span>
-    <span class="pubs-summary-label">Citations</span>
-  </div>
-  <div class="pubs-summary-item">
-    <span class="pubs-summary-num">40</span>
-    <span class="pubs-summary-label">Reads</span>
-  </div>
-  <div class="pubs-summary-item">
-    <span class="pubs-summary-num">5</span>
-    <span class="pubs-summary-label">Downloads</span>
-  </div>
+  <div class="pubs-summary-item"><span class="pubs-summary-num">8</span><span class="pubs-summary-label">Total</span></div>
+  <div class="pubs-summary-item"><span class="pubs-summary-num">0</span><span class="pubs-summary-label">Citations</span></div>
+  <div class="pubs-summary-item"><span class="pubs-summary-num">2</span><span class="pubs-summary-label">Peer-reviewed</span></div>
+  <div class="pubs-summary-item"><span class="pubs-summary-num">2</span><span class="pubs-summary-label">Preprints</span></div>
+  <div class="pubs-summary-item"><span class="pubs-summary-num">2</span><span class="pubs-summary-label">Datasets</span></div>
 </div>
-<p class="pubs-summary-note">Citations from Google Scholar / Crossref · reads &amp; downloads from Zenodo where available. ResearchGate reads can be set by hand in the data file.</p>
-
+<p class="pubs-summary-note">Grouped below by type. Citations from Scholar/Crossref when available; Zenodo reads where recorded.</p>
 <div id="pubs-list">
-<a class="card card-link" href="https://doi.org/10.5281/zenodo.22680867" target="_blank" rel="noopener noreferrer">
-<div class="card-date">Zenodo · 2026</div>
-<div class="card-title">Virelion Biotech Computational Cardiovascular Research Platform</div>
-<div class="card-body" style="margin-top:0.45rem">0 citations (Google Scholar) · 40 reads (Zenodo views) · 5 downloads</div>
-<div class="card-tag">DOI 10.5281/zenodo.22680867</div>
-</a>
-<a class="card card-link" href="https://scholar.google.com/citations?user=HoDp67cAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
-<div class="card-date">2026</div>
+
+<div class="pubs-section" id="pubs-peer">
+  <h2 class="section-label" style="margin-top:1.4rem;margin-bottom:0.9rem">Peer-reviewed</h2>
+  <div class="pubs-section-list"><a class="card card-link" href="https://scholar.google.com/citations?user=HoDp67cAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
+<div class="card-date">Publication · 2026</div>
 <div class="card-title">Ovarian Tissue Cryopreservation in Turner Syndrome: A Narrative Review</div>
-<div class="card-body" style="margin-top:0.45rem">0 citations (Google Scholar)</div>
-
-</a>
-<a class="card card-link" href="https://scholar.google.com/citations?user=HoDp67cAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
-<div class="card-date">2026</div>
-<div class="card-title">Upregulation of ELFN2 in TDP-43 Knockout HeLa M Cells Suggests a Compensatory Mechanism Modulating Glutamatergic Signaling on Chromosome 22</div>
-<div class="card-body" style="margin-top:0.45rem">0 citations (Google Scholar)</div>
-
+<div class="card-body" style="margin-top:0.35rem;opacity:0.9">0 citations (Google Scholar)</div>
 </a>
 <a class="card card-link" href="https://doi.org/10.7759/cureus.97774" target="_blank" rel="noopener noreferrer">
-<div class="card-date">Cureus · 2025</div>
+<div class="card-date">Publication · Cureus · 2025</div>
 <div class="card-title">Cutting Through the Debate: Surgical Resection Versus Surveillance-Based Approach for Kikuchi SM2/3 Colorectal Polyps</div>
-<div class="card-body" style="margin-top:0.45rem">0 citations (Crossref)</div>
-<div class="card-tag">DOI 10.7759/cureus.97774</div>
-</a>
+<div class="card-body" style="margin-top:0.35rem;opacity:0.9">0 citations (Crossref)</div><div class="card-tag">DOI 10.7759/cureus.97774</div>
+</a></div>
 </div>
-<p id="pubs-updated" class="sidebar-updated" style="margin-top:1rem;opacity:0.7">Metrics refreshed 2026-10-16</p>
+
+<div class="pubs-section" id="pubs-preprint">
+  <h2 class="section-label" style="margin-top:1.4rem;margin-bottom:0.9rem">Preprints</h2>
+  <div class="pubs-section-list"><a class="card card-link" href="https://doi.org/10.5281/zenodo.23169639" target="_blank" rel="noopener noreferrer">
+<div class="card-date">Preprint · Zenodo · 2026</div>
+<div class="card-title">Target-Specific Partial Identification for Cardiomyocyte Regeneration Assays: Bounds, Sensitivity Analyses, and Design Implications</div>
+<div class="card-body" style="margin-top:0.45rem">Target-first partial-identification framework for cardiomyocyte regeneration studies: bounds, sensitivity analyses, and design implications.</div><div class="card-body" style="margin-top:0.35rem;opacity:0.9">0 citations (OpenAlex)</div><div class="card-tag">DOI 10.5281/zenodo.23169639</div>
+</a>
+<a class="card card-link" href="https://scholar.google.com/citations?user=HoDp67cAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
+<div class="card-date">Publication · 2026</div>
+<div class="card-title">Upregulation of ELFN2 in TDP-43 Knockout HeLa M Cells Suggests a Compensatory Mechanism Modulating Glutamatergic Signaling on Chromosome 22</div>
+<div class="card-body" style="margin-top:0.35rem;opacity:0.9">0 citations (Google Scholar)</div>
+</a></div>
+</div>
+
+<div class="pubs-section" id="pubs-dataset">
+  <h2 class="section-label" style="margin-top:1.4rem;margin-bottom:0.9rem">Datasets</h2>
+  <div class="pubs-section-list"><a class="card card-link" href="https://doi.org/10.5281/zenodo.23635668" target="_blank" rel="noopener noreferrer">
+<div class="card-date">Dataset · Zenodo · 2026</div>
+<div class="card-title">Species-Resolved Citation Network Data for Cardiac Regeneration Research, 2000–2026</div>
+<div class="card-body" style="margin-top:0.45rem">Bibliographic source data, citation edges, species-resolved fractional citation edges, analysis outputs, and code for a cross-species citation-flow analysis of cardiac regeneration research (9,893 papers; 63,788 edges).</div><div class="card-body" style="margin-top:0.35rem;opacity:0.9">0 citations (OpenAlex)</div><div class="card-tag" style="margin-right:0.4rem">dataset</div><div class="card-tag">DOI 10.5281/zenodo.23635668</div>
+</a>
+<a class="card card-link" href="https://doi.org/10.5281/zenodo.23634334" target="_blank" rel="noopener noreferrer">
+<div class="card-date">Dataset · Zenodo · 2026</div>
+<div class="card-title">Transdifferentiation Topic Dynamics in Bone-Marrow Cardiac Regeneration: Data and Analysis</div>
+<div class="card-body" style="margin-top:0.45rem">Derived data and analysis code for a longitudinal study of transdifferentiation-topic presence in bone-marrow cardiac-regeneration literature, 2000–2025 (source frozen 23 Oct 2026).</div><div class="card-body" style="margin-top:0.35rem;opacity:0.9">0 citations (OpenAlex)</div><div class="card-tag" style="margin-right:0.4rem">dataset</div><div class="card-tag">DOI 10.5281/zenodo.23634334</div>
+</a></div>
+</div>
+
+<div class="pubs-section" id="pubs-software">
+  <h2 class="section-label" style="margin-top:1.4rem;margin-bottom:0.9rem">Software</h2>
+  <div class="pubs-section-list"><a class="card card-link" href="https://doi.org/10.5281/zenodo.23188384" target="_blank" rel="noopener noreferrer">
+<div class="card-date">Software · Zenodo · 2026</div>
+<div class="card-title">ElectroTrace: reproducible ECG/electrophysiology annotation and benchmarking</div>
+<div class="card-body" style="margin-top:0.45rem">Research software for ECG/electrophysiology annotation, detector benchmarking, leakage-aware validation, provenance, and calibration-grade ECG/EAM handoffs.</div><div class="card-body" style="margin-top:0.35rem;opacity:0.9">0 citations (OpenAlex)</div><div class="card-tag" style="margin-right:0.4rem">software</div><div class="card-tag">DOI 10.5281/zenodo.23188384</div>
+</a></div>
+</div>
+
+<div class="pubs-section" id="pubs-other">
+  <h2 class="section-label" style="margin-top:1.4rem;margin-bottom:0.9rem">Other open records</h2>
+  <div class="pubs-section-list"><a class="card card-link" href="https://doi.org/10.5281/zenodo.22680867" target="_blank" rel="noopener noreferrer">
+<div class="card-date">Publication · Zenodo · 2026</div>
+<div class="card-title">Virelion Biotech Computational Cardiovascular Research Platform</div>
+<div class="card-body" style="margin-top:0.35rem;opacity:0.9">0 citations (Google Scholar) · 40 reads (Zenodo views) · 5 downloads</div><div class="card-tag">DOI 10.5281/zenodo.22680867</div>
+</a></div>
+</div>
+</div>
+<p id="pubs-updated" class="sidebar-updated" style="margin-top:1rem;opacity:0.7">Metrics refreshed 2026-10-28</p>
 
 </main>
 <footer>© 2026 Syed Umer Hannan  ·  Cardiac Regenerative Scientist</footer>
@@ -860,34 +886,65 @@ var el=document.getElementById('last-updated-date'); if(el) el.textContent='Sep 
 
 </script>
 
+
 <script>
 (function(){
   function esc(s){return String(s||'').replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
-  fetch('data/publications.json').then(function(r){return r.json();}).then(function(data){
-    var el = document.getElementById('pubs-list');
-    var upd = document.getElementById('pubs-updated');
-    if(upd && data.updated) upd.textContent = 'Metrics refreshed ' + data.updated.slice(0,10);
+  function classify(p){
+    var t=(p.type||'').toLowerCase(), title=(p.title||'').toLowerCase(), doi=(p.doi||'').toLowerCase();
+    if(t==='dataset') return 'dataset';
+    if(t==='software' || title.indexOf('electrotrace')>=0) return 'software';
+    if(t==='preprint' || doi.indexOf('rs.3.rs')>=0 || title.indexOf('partial identification')>=0) return 'preprint';
+    if(title.indexOf('virelion')>=0) return 'other';
+    if(doi.indexOf('cureus')>=0 || doi.indexOf('rd9')>=0 || title.indexOf('ovarian')>=0 || title.indexOf('kikuchi')>=0) return 'peer';
+    if(title.indexOf('elfn2')>=0 || title.indexOf('tdp-43')>=0) return 'preprint';
+    if(t==='publication') return 'peer';
+    return 'other';
+  }
+  var labels={peer:'Peer-reviewed',preprint:'Preprints',dataset:'Datasets',software:'Software',other:'Other open records'};
+  var order=['peer','preprint','dataset','software','other'];
+  fetch('data/publications.json?t='+Date.now()).then(function(r){return r.json();}).then(function(data){
+    var el=document.getElementById('pubs-list');
+    var upd=document.getElementById('pubs-updated');
+    if(upd && data.updated) upd.textContent='Metrics refreshed '+data.updated.slice(0,10);
     if(!el || !(data.papers||[]).length) return;
-    el.innerHTML = data.papers.map(function(p){
-      var href = p.url || (p.doi ? ('https://doi.org/' + p.doi) : (p.scholar_url || '#'));
-      var meta = [];
-      if(p.venue) meta.push(p.venue);
-      if(p.year) meta.push(p.year);
-      var stats = [];
-      if(p.citations != null) stats.push((p.citations||0) + ' citation' + (p.citations===1?'':'s') + (p.citations_source ? ' (' + p.citations_source + ')' : ''));
-      if(p.researchgate_reads != null) stats.push(p.researchgate_reads + ' ResearchGate reads');
-      else if(p.reads != null) stats.push(p.reads + ' reads' + (p.reads_source ? ' (' + p.reads_source + ')' : ''));
-      if(p.downloads != null) stats.push(p.downloads + ' downloads');
-      return '<a class="card card-link" href="' + esc(href) + '" target="_blank" rel="noopener noreferrer">' +
-        '<div class="card-date">' + esc(meta.join(' · ')) + '</div>' +
-        '<div class="card-title">' + esc(p.title) + '</div>' +
-        (stats.length ? '<div class="card-body" style="margin-top:0.45rem">' + esc(stats.join(' · ')) + '</div>' : '') +
-        (p.doi ? '<div class="card-tag">DOI ' + esc(p.doi) + '</div>' : '') +
-        '</a>';
+    var buckets={peer:[],preprint:[],dataset:[],software:[],other:[]};
+    data.papers.forEach(function(p){ buckets[classify(p)].push(p); });
+    // update summary nums if present
+    var nums=document.querySelectorAll('.pubs-summary-num');
+    if(nums.length>=5){
+      var cites=0; data.papers.forEach(function(p){ cites += (p.citations||0); });
+      nums[0].textContent=String(data.papers.length);
+      nums[1].textContent=String(cites);
+      nums[2].textContent=String(buckets.peer.length);
+      nums[3].textContent=String(buckets.preprint.length);
+      nums[4].textContent=String(buckets.dataset.length);
+    }
+    el.innerHTML=order.filter(function(k){return buckets[k].length;}).map(function(k){
+      var cards=buckets[k].map(function(p){
+        var href=p.url||(p.doi?('https://doi.org/'+p.doi):(p.scholar_url||'#'));
+        var meta=[];
+        if(p.type) meta.push(p.type.charAt(0).toUpperCase()+p.type.slice(1));
+        if(p.venue) meta.push(p.venue);
+        if(p.year) meta.push(p.year);
+        var stats=[];
+        if(p.citations!=null) stats.push((p.citations||0)+' citation'+(p.citations===1?'':'s')+(p.citations_source?' ('+p.citations_source+')':''));
+        if(p.reads!=null) stats.push(p.reads+' reads'+(p.reads_source?' ('+p.reads_source+')':''));
+        if(p.downloads!=null) stats.push(p.downloads+' downloads');
+        var body='';
+        if(p.summary) body+='<div class="card-body" style="margin-top:0.45rem">'+esc(p.summary)+'</div>';
+        if(stats.length) body+='<div class="card-body" style="margin-top:0.35rem;opacity:0.9">'+esc(stats.join(' · '))+'</div>';
+        var tags='';
+        if(p.type==='dataset'||p.type==='software') tags+='<div class="card-tag" style="margin-right:0.4rem">'+esc(p.type)+'</div>';
+        if(p.doi) tags+='<div class="card-tag">DOI '+esc(p.doi)+'</div>';
+        return '<a class="card card-link" href="'+esc(href)+'" target="_blank" rel="noopener noreferrer"><div class="card-date">'+esc(meta.join(' · '))+'</div><div class="card-title">'+esc(p.title)+'</div>'+body+tags+'</a>';
+      }).join('');
+      return '<div class="pubs-section" id="pubs-'+k+'"><h2 class="section-label" style="margin-top:1.4rem;margin-bottom:0.9rem">'+esc(labels[k])+'</h2><div class="pubs-section-list">'+cards+'</div></div>';
     }).join('');
-  }).catch(function(){ /* static cards already present */ });
+  }).catch(function(){});
 })();
 </script>
+
 
 </body>
 </html>

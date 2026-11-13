@@ -3,7 +3,7 @@
 <head>
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml"/>
 <link rel="alternate icon" href="img/favicon.svg"/>
-<meta name="theme-color" content="#112909"/>
+<meta name="theme-color" content="#1f7a3a"/>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="Publications and preprints by Syed Umer Hannan in bioinformatics, clinical review, and related areas." name="description"/>
@@ -27,14 +27,14 @@
 --ink2:#2a3d1f;
 --ink3:#5a6b4a;
 --ink4:#7a8a6a;
---paper:#f8ead6;
---paper2:#f3dbc1;
---paper3:#e0c9a8;
---accent:#a04a0d;
---accent2:#7a380a;
+--paper:#eef3e6;
+--paper2:#e2ead6;
+--paper3:#c8d6b8;
+--accent:#1f7a3a;
+--accent2:#145a2a;
 --vein:#105b09;
 --moss:#105b09;
---crimson:#a04a0d;
+--crimson:#1f7a3a;
 --ease:cubic-bezier(0.23,1,0.32,1);
 --transition-smooth:all 0.28s var(--ease);
 --display:'Roboto Mono',ui-monospace,monospace;
@@ -42,7 +42,7 @@
 --mono:'Roboto Mono',ui-monospace,monospace;
 --r-sm:6px;--r-md:10px;--r-lg:14px;
 --sidebar-w:228px;
---panel:#e0b98a;
+--panel:#c5d4b0;
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.001ms !important;animation-iteration-count:1 !important;transition-duration:0.001ms !important;scroll-behavior:auto !important}}
 body{font-family:var(--serif);background:var(--paper);color:var(--ink);font-size:16px;line-height:1.72;min-height:100vh;overflow-x:hidden;transition:background.35s ease;background-image:var(--noise)}
@@ -51,7 +51,7 @@ body{font-family:var(--serif);background:var(--paper);color:var(--ink);font-size
 body.dark-mode .main{
  --ink:#EEE9DC;--ink2:#C7C0AE;--ink3:#948C7C;--ink4:#5E584C;
  --paper:#1A1612;--paper2:#221E18;--paper3:#332C24;
- --accent:#E07A5F;--accent2:#F09A7A;--vein:#5DAAAC;
+ --accent:#3d9a5c;--accent2:#F09A7A;--vein:#5DAAAC;
  background:var(--paper);
  min-height:100vh;
  transition:background.35s ease,color.35s ease;
@@ -86,7 +86,7 @@ body.dark-mode #theme-icon-sun{display:block !important}
 .sidebar{position:fixed;top:0;left:0;bottom:0;width:var(--sidebar-w);background:var(--panel);color:#E8E4D8;display:flex;flex-direction:column;z-index:200;border-right:1px solid #000}
 .sidebar-brand{padding:1.35rem 1.35rem 0.95rem;font-family:var(--mono);font-size:0.7rem;letter-spacing:0.08em;text-transform:none;color:var(--ink4);display:flex;align-items:center;gap:8px;border-bottom:1px solid rgba(255,255,255,0.07)}
 #theme-toggle{margin-left:auto;background:transparent;border:1px solid rgba(255,255,255,0.14);color:var(--ink4);width:26px;height:26px;border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--transition-smooth)}
-#theme-toggle:hover{color:#fff;border-color:var(--accent);background:rgba(160,74,13,0.22);transform:rotate(-14deg)}
+#theme-toggle:hover{color:#fff;border-color:var(--accent);background:rgba(31,122,58,0.22);transform:rotate(-14deg)}
 .sidebar-foot{padding:1.1rem 1.4rem 1.5rem;border-top:1px solid rgba(255,255,255,0.08);display:flex;flex-direction:column;gap:0.8rem}
 .sidebar-foot-icons{display:flex;gap:6px}
 .sidebar-updated{font-family:var(--mono);font-size:0.6rem;letter-spacing:0.03em;color:var(--ink4);opacity:0.65}
@@ -96,12 +96,12 @@ body.dark-mode #theme-icon-sun{display:block !important}
 .sidebar-nav a.tick{width:6px;height:6px;border-radius:50%;border:1px solid currentColor;flex-shrink:0;transition:var(--transition-smooth)}
 .sidebar-nav a:hover{color:#fff;background:rgba(255,255,255,0.04);padding-left:1.45rem}
 .sidebar-nav a:hover.tick{transform:scale(1.3)}
-.sidebar-nav a.active{color:#fff;border-left-color:var(--accent);background:rgba(160,74,13,0.13)}
+.sidebar-nav a.active{color:#fff;border-left-color:var(--accent);background:rgba(31,122,58,0.13)}
 .sidebar-nav a.active.tick{background:var(--accent);border-color:var(--accent);animation:beat 1.8s ease-in-out infinite}
-@keyframes beat{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(160,74,13,0.5)}22%{transform:scale(1.35);box-shadow:0 0 0 4px rgba(160,74,13,0)}45%{transform:scale(0.9)}}
+@keyframes beat{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(31,122,58,0.5)}22%{transform:scale(1.35);box-shadow:0 0 0 4px rgba(31,122,58,0)}45%{transform:scale(0.9)}}
 @media(prefers-reduced-motion:reduce){.sidebar-nav a.active.tick{animation:none}}
 .sidebar-foot-icons a{width:30px;height:30px;border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;color:var(--ink4);border:1px solid rgba(255,255,255,0.14);text-decoration:none;transition:var(--transition-smooth)}
-.sidebar-foot-icons a:hover{color:#fff;border-color:var(--accent);background:rgba(160,74,13,0.22);transform:translateY(-2px)}
+.sidebar-foot-icons a:hover{color:#fff;border-color:var(--accent);background:rgba(31,122,58,0.22);transform:translateY(-2px)}
 
 .main{margin-left:var(--sidebar-w)}
 
@@ -110,7 +110,7 @@ body.dark-mode #theme-icon-sun{display:block !important}
 
 header{background:var(--paper);padding:3.6rem 3rem 2.2rem;position:relative;border-bottom:1px solid var(--paper3)}
 .header-eyebrow{font-family:var(--mono);font-size:0.72rem;letter-spacing:0.14em;color:var(--accent);text-transform:uppercase;margin-bottom:0.9rem;display:flex;align-items:center;gap:9px}
-.header-eyebrow.live-dot{width:7px;height:7px;border-radius:50%;background:var(--crimson);box-shadow:0 0 0 3px rgba(160,74,13,0.15);flex-shrink:0;animation:beat 2.4s ease-in-out infinite}
+.header-eyebrow.live-dot{width:7px;height:7px;border-radius:50%;background:var(--crimson);box-shadow:0 0 0 3px rgba(31,122,58,0.15);flex-shrink:0;animation:beat 2.4s ease-in-out infinite}
 .header-name{font-family:var(--display);font-optical-sizing:auto;font-weight:600;font-size:clamp(2.55rem,5.5vw,4rem);color:var(--ink);line-height:1.05;margin-bottom:0.85rem;letter-spacing:-0.015em;opacity:0;animation:riseIn .85s var(--ease) forwards .08s}
 .header-name.last{color:var(--accent);font-style:italic}
 .header-sub{font-family:var(--serif);font-size:1.06rem;color:var(--ink2);letter-spacing:0;max-width:540px;line-height:1.75;opacity:0;animation:riseIn .8s var(--ease) forwards .3s}
@@ -182,7 +182,7 @@ header{background:var(--paper);padding:3.6rem 3rem 2.2rem;position:relative;bord
 .btn:hover{background:var(--panel);color:var(--paper);transform:translateY(-2px);box-shadow:0 8px 18px -8px rgba(28,35,33,0.35)}
 .btn:active{transform:translateY(0) scale(.97)}
 .btn-accent{border-color:var(--accent);color:var(--accent)}
-.btn-accent:hover{background:var(--accent);color:#fff;box-shadow:0 8px 18px -8px rgba(160,74,13,0.5)}
+.btn-accent:hover{background:var(--accent);color:#fff;box-shadow:0 8px 18px -8px rgba(31,122,58,0.5)}
 
 .photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
 .photo-placeholder{aspect-ratio:4/3;background:var(--paper2);border:1px dashed var(--paper3);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;border-radius:var(--r-md);color:var(--ink4);font-family:var(--mono);font-size:0.7rem;letter-spacing:0.08em}
@@ -275,7 +275,7 @@ body.dark-mode .series-banner{background:var(--paper);border:1px solid var(--pap
 .vlp-desc{font-family:var(--serif);font-size:0.92rem;color:var(--ink2);line-height:1.7;margin-bottom:1.3rem;max-width:640px}
 .vlp-links{display:flex;flex-wrap:wrap;gap:0.8rem}
 .vlp-link{display:flex;flex-direction:column;gap:3px;padding:0.9rem 1.2rem;border:1px solid var(--paper3);border-radius:var(--r-md);background:#fff;text-decoration:none;flex:1;min-width:220px;transition:var(--transition-smooth)}
-.vlp-link:hover{border-color:var(--accent);background:rgba(160,74,13,0.05);transform:translateY(-2px)}
+.vlp-link:hover{border-color:var(--accent);background:rgba(31,122,58,0.05);transform:translateY(-2px)}
 .vlp-link-title{font-family:var(--mono);font-size:0.78rem;letter-spacing:0.04em;color:var(--ink);font-weight:600}
 .vlp-link-sub{font-family:var(--mono);font-size:0.68rem;color:var(--ink3)}
 body.dark-mode.vlp-link{background:var(--paper2)}
@@ -297,10 +297,10 @@ body.private-mode.main{margin-left:0}
 body.private-mode.container{padding:0;max-width:none;margin:0}
 .signin-visual{background:var(--panel);color:#f5ece4;display:flex;flex-direction:column;justify-content:center;padding:3.5rem 3.2rem;position:relative;overflow:hidden;border-right:1px solid #000}
 .signin-visual::after{content:'';position:absolute;inset:0;background:
- repeating-linear-gradient(to bottom,transparent 0 39px,rgba(160,74,13,0.08) 39px 40px);
+ repeating-linear-gradient(to bottom,transparent 0 39px,rgba(31,122,58,0.08) 39px 40px);
  pointer-events:none}
 .signin-eyebrow{font-family:var(--mono);font-size:0.72rem;letter-spacing:0.14em;color:var(--accent);text-transform:uppercase;margin-bottom:1.1rem;display:flex;align-items:center;gap:9px;position:relative;z-index:1}
-.signin-eyebrow.live-dot{width:7px;height:7px;border-radius:50%;background:var(--crimson);box-shadow:0 0 0 3px rgba(160,74,13,0.15);flex-shrink:0;animation:beat 2.4s ease-in-out infinite}
+.signin-eyebrow.live-dot{width:7px;height:7px;border-radius:50%;background:var(--crimson);box-shadow:0 0 0 3px rgba(31,122,58,0.15);flex-shrink:0;animation:beat 2.4s ease-in-out infinite}
 .signin-visual-title{font-family:var(--display);font-weight:600;font-size:clamp(2.1rem,3.6vw,3rem);line-height:1.05;letter-spacing:-0.01em;margin-bottom:1.2rem;position:relative;z-index:1}
 .signin-visual-title.accent-word{color:var(--accent);font-style:italic}
 .signin-visual-sub{font-family:var(--serif);font-size:0.98rem;color:var(--ink4);line-height:1.75;max-width:400px;position:relative;z-index:1}
@@ -313,7 +313,7 @@ body.private-mode.container{padding:0;max-width:none;margin:0}
 .signin-form-desc{font-family:var(--serif);font-size:0.9rem;color:var(--ink2);margin-bottom:1.8rem;line-height:1.6}
 .signin-field-label{font-family:var(--mono);font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:0.5rem;display:block}
 .signin-input{width:100%;background:#fff;border:1px solid var(--paper3);border-radius:var(--r-sm);padding:0.8rem 1rem;font-family:var(--mono);font-size:0.9rem;color:var(--ink);outline:none;display:block;transition:var(--transition-smooth)}
-.signin-input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(160,74,13,0.14)}
+.signin-input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(31,122,58,0.14)}
 .signin-input-wrap{position:relative;margin-bottom:1rem}
 .signin-input-wrap.signin-input{margin-bottom:0;padding-right:3.6rem}
 .pw-toggle-btn{position:absolute;right:6px;top:50%;transform:translateY(-50%);background:transparent;border:none;font-family:var(--mono);font-size:0.66rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink3);cursor:pointer;padding:0.4rem 0.6rem;border-radius:var(--r-sm);transition:var(--transition-smooth)}
@@ -381,7 +381,7 @@ header::after{content:'';position:absolute;left:3rem;bottom:-1px;width:72px;heig
 .prose-block p + p{margin-top:-0.15rem} /* slight organic spacing */
 .header-sub{max-width:520px}
 /* lived-in note */
-.human-note{font-family:var(--mono);font-size:0.68rem;letter-spacing:0.04em;color:var(--ink3);margin-top:1.4rem;padding:0.55rem 0.8rem;border-left:2px solid var(--paper3);background:rgba(160,74,13,0.04);border-radius:0 6px 6px 0;display:inline-block}
+.human-note{font-family:var(--mono);font-size:0.68rem;letter-spacing:0.04em;color:var(--ink3);margin-top:1.4rem;padding:0.55rem 0.8rem;border-left:2px solid var(--paper3);background:rgba(31,122,58,0.04);border-radius:0 6px 6px 0;display:inline-block}
 body.dark-mode.human-note{background:rgba(224,107,63,0.08);border-left-color:var(--ink4)}
 /* softer pulse */
 .sidebar-pulse{opacity:0.9;margin:0.15rem 0 0.35rem}
@@ -410,44 +410,44 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 
 /* Button text always visible — Baldoni cinnamon on cream */
 .pill-cta{
-  background:#f8ead6 !important;
+  background:#eef3e6 !important;
   color:#112909 !important;
-  border:1.5px solid #a04a0d !important;
+  border:1.5px solid #1f7a3a !important;
 }
 .pill-cta:hover{
-  background:#f3dbc1 !important;
+  background:#e2ead6 !important;
   color:#112909 !important;
 }
 .pill-cta.accent{
-  background:#a04a0d !important;
-  color:#f8ead6 !important;
-  border-color:#a04a0d !important;
+  background:#1f7a3a !important;
+  color:#eef3e6 !important;
+  border-color:#1f7a3a !important;
 }
 .pill-cta.accent:hover{
-  background:#7a380a !important;
-  color:#f8ead6 !important;
+  background:#145a2a !important;
+  color:#eef3e6 !important;
 }
 .btn,.btn-accent{
-  background:#a04a0d !important;
-  color:#f8ead6 !important;
-  border:1.5px solid #a04a0d !important;
+  background:#1f7a3a !important;
+  color:#eef3e6 !important;
+  border:1.5px solid #1f7a3a !important;
 }
 .btn:hover,.btn-accent:hover{
-  background:#7a380a !important;
-  color:#f8ead6 !important;
+  background:#145a2a !important;
+  color:#eef3e6 !important;
 }
 .btn:not(.btn-accent){
-  background:#f8ead6 !important;
+  background:#eef3e6 !important;
   color:#112909 !important;
-  border:1.5px solid #a04a0d !important;
+  border:1.5px solid #1f7a3a !important;
 }
 .btn:not(.btn-accent):hover{
-  background:#f3dbc1 !important;
+  background:#e2ead6 !important;
   color:#112909 !important;
 }
 /* light navbar-style sidebar (Baldoni) */
 .sidebar{
-  background:#e0b98a !important;
+  background:#c5d4b0 !important;
   color:#112909 !important;
   border-right:1px solid rgba(17,41,9,0.15);
 }
@@ -455,16 +455,16 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
   color:#112909 !important;
 }
 .sidebar-nav a:hover,.sidebar-nav a.active{
-  color:#a04a0d !important;
-  background:rgba(160,74,13,0.12) !important;
+  color:#1f7a3a !important;
+  background:rgba(31,122,58,0.12) !important;
 }
-.sidebar-nav a.active .tick{background:#a04a0d !important}
-.sidebar-pulse path{stroke:#a04a0d !important}
+.sidebar-nav a.active .tick{background:#1f7a3a !important}
+.sidebar-pulse path{stroke:#1f7a3a !important}
 #theme-toggle{border-color:rgba(17,41,9,0.25);color:#112909}
-.mobile-topbar{background:#e0b98a !important;color:#112909}
+.mobile-topbar{background:#c5d4b0 !important;color:#112909}
 /* Baldoni link underline */
 .about-text-col a, .flow-body a, .home-cta a, .wb-text a{
-  color:#a04a0d;
+  color:#1f7a3a;
   font-weight:600;
   text-decoration:none;
   background-image:linear-gradient(transparent 60%, rgba(248,202,93,0.55) 60%);
@@ -476,20 +476,20 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 body{font-family:'Roboto Slab',Georgia,serif;font-size:17px;line-height:1.75}
 .header-name,h1,h2,h3,.section-label,.card-title,.cv-role{font-family:'Roboto Mono',ui-monospace,monospace}
 .btn,.btn-accent{
-  background:#a04a0d !important;
-  color:#f8ead6 !important;
-  border:1.5px solid #a04a0d !important;
+  background:#1f7a3a !important;
+  color:#eef3e6 !important;
+  border:1.5px solid #1f7a3a !important;
   border-radius:999px !important;
   font-family:'Roboto Mono',monospace !important;
 }
-.btn:hover,.btn-accent:hover{background:#7a380a !important;color:#f8ead6 !important}
+.btn:hover,.btn-accent:hover{background:#145a2a !important;color:#eef3e6 !important}
 .btn:not(.btn-accent){
-  background:#f8ead6 !important;
+  background:#eef3e6 !important;
   color:#112909 !important;
 }
-.card{border-radius:12px;border-color:#e0c9a8}
-.featured-label{background:#a04a0d !important;border-radius:999px}
-.series-banner{background:#f3dbc1 !important;border-left:4px solid #f8ca5d !important}
+.card{border-radius:12px;border-color:#c8d6b8}
+.featured-label{background:#1f7a3a !important;border-radius:999px}
+.series-banner{background:#e2ead6 !important;border-left:4px solid #f8ca5d !important}
 
 
 /* Footer: paper-aligned, not sidebar panel */
@@ -518,12 +518,12 @@ body.dark-mode .series-banner,
 body.dark-mode .series-banner-live{
   background:var(--paper2) !important;
   border-color:var(--paper3) !important;
-  border-left-color:#E07A5F !important;
+  border-left-color:#3d9a5c !important;
   color:var(--ink);
 }
 body.dark-mode .series-banner-live .series-label-tag,
 body.dark-mode .series-label-tag{
-  background:#E07A5F !important;
+  background:#3d9a5c !important;
   color:#1A1612 !important;
 }
 body.dark-mode .series-title{color:var(--ink) !important}
@@ -538,7 +538,7 @@ body.dark-mode .card-title{color:var(--ink) !important}
 body.dark-mode .card-meta,
 body.dark-mode .card-desc{color:var(--ink2) !important}
 body.dark-mode .featured-label{
-  background:#E07A5F !important;
+  background:#3d9a5c !important;
   color:#1A1612 !important;
 }
 body.dark-mode .sport-board{
@@ -558,7 +558,7 @@ body.dark-mode .sport-board-title{color:var(--ink) !important}
 body.dark-mode .sport-board-stats li{border-bottom-color:rgba(255,255,255,0.08)}
 body.dark-mode .sport-board-stats li span{color:var(--ink3)}
 body.dark-mode .sport-board-stats li strong{color:var(--ink)}
-body.dark-mode .sport-board-stats a{color:#E07A5F}
+body.dark-mode .sport-board-stats a{color:#3d9a5c}
 body.dark-mode .fl-chip.muted{background:rgba(77,141,255,0.18);color:#8eb6ff}
 body.dark-mode .btn:not(.btn-accent),
 body.dark-mode .pill-cta{
@@ -568,9 +568,9 @@ body.dark-mode .pill-cta{
 }
 body.dark-mode .btn-accent,
 body.dark-mode .pill-cta.accent{
-  background:#E07A5F !important;
+  background:#3d9a5c !important;
   color:#1A1612 !important;
-  border-color:#E07A5F !important;
+  border-color:#3d9a5c !important;
 }
 body.dark-mode .main{background:var(--paper)}
 body.dark-mode .container{color:var(--ink)}
@@ -598,11 +598,11 @@ body.dark-mode .atlas-node{
   /* keep map as a lit paper surface so node text stays dark and readable */
   color:#112909;
 }
-body.dark-mode .atlas-stage{background:#f8ead6 !important;}
+body.dark-mode .atlas-stage{background:#eef3e6 !important;}
 body.dark-mode .atlas-node{
   background:rgba(255,250,242,0.97) !important;
   color:#112909 !important;
-  border-color:rgba(160,74,13,0.28) !important;
+  border-color:rgba(31,122,58,0.28) !important;
 }
 body.dark-mode .atlas-node .node-kicker,
 body.dark-mode .atlas-node .node-label,
@@ -610,15 +610,15 @@ body.dark-mode .atlas-guide{color:#5a6b4a !important;}
 body.dark-mode .atlas-node strong,
 body.dark-mode .atlas-node .node-title{color:#112909 !important;}
 body.dark-mode .constellation-panel{
-  background:#f8ead6 !important;
-  border-color:#a04a0d !important;
+  background:#eef3e6 !important;
+  border-color:#1f7a3a !important;
   color:#112909 !important;
 }
 body.dark-mode .panel-title{color:#112909 !important;opacity:1 !important;}
 body.dark-mode .panel-body{color:#2a3d1f !important;opacity:1 !important;}
-body.dark-mode .panel-num{color:#a04a0d !important;}
-body.dark-mode .panel-tags span{background:#f3dbc1 !important;color:#112909 !important;border-color:#e0c9a8 !important;}
-body.dark-mode .panel-link a{color:#a04a0d !important;}
+body.dark-mode .panel-num{color:#1f7a3a !important;}
+body.dark-mode .panel-tags span{background:#e2ead6 !important;color:#112909 !important;border-color:#c8d6b8 !important;}
+body.dark-mode .panel-link a{color:#1f7a3a !important;}
 body.dark-mode .research-lede,
 body.dark-mode .blog-lede,
 body.dark-mode .prose-block p,
@@ -650,24 +650,24 @@ body.dark-mode .tools-prompt-chevron{
 body.dark-mode .tools-prompt-sub{color:#5a6b4a !important;opacity:1 !important;}
 body.dark-mode .tools-prompt-text strong{opacity:1 !important;}
 body.dark-mode .tools-prompt{
-  background:linear-gradient(145deg,#f8ead6 0%,#f3dbc1 100%) !important;
-  border-color:#e0c9a8 !important;
+  background:linear-gradient(145deg,#eef3e6 0%,#e2ead6 100%) !important;
+  border-color:#c8d6b8 !important;
 }
 body.dark-mode .tools-panel{
-  background:#f8ead6 !important;
-  border-color:#e0c9a8 !important;
+  background:#eef3e6 !important;
+  border-color:#c8d6b8 !important;
   color:#112909 !important;
 }
 body.dark-mode .vs-card{
   background:#fff8ee !important;
-  border-color:#e0c9a8 !important;
+  border-color:#c8d6b8 !important;
   color:#112909 !important;
 }
 body.dark-mode .vs-name{color:#112909 !important;}
-body.dark-mode .vs-layer{color:#a04a0d !important;}
+body.dark-mode .vs-layer{color:#1f7a3a !important;}
 body.dark-mode .vs-blurb{color:#2a3d1f !important;}
 body.dark-mode .stack-foot{color:#5a6b4a !important;}
-body.dark-mode .stack-foot a{color:#a04a0d !important;}
+body.dark-mode .stack-foot a{color:#1f7a3a !important;}
 
 
 .pubs-summary{
@@ -678,7 +678,7 @@ body.dark-mode .stack-foot a{color:#a04a0d !important;}
   padding:1.15rem 1.2rem;
   border-radius:14px;
   border:1.5px solid var(--paper3);
-  background:linear-gradient(145deg,#fff8ee 0%,#f3dbc1 100%);
+  background:linear-gradient(145deg,#fff8ee 0%,#e2ead6 100%);
 }
 .pubs-summary-item{display:flex;flex-direction:column;align-items:flex-start;gap:0.2rem}
 .pubs-summary-num{
@@ -705,15 +705,53 @@ body.dark-mode .stack-foot a{color:#a04a0d !important;}
   .pubs-summary{grid-template-columns:1fr 1fr}
 }
 body.dark-mode .pubs-summary{
-  background:linear-gradient(145deg,#fff8ee 0%,#f3dbc1 100%) !important;
-  border-color:#e0c9a8 !important;
+  background:linear-gradient(145deg,#fff8ee 0%,#e2ead6 100%) !important;
+  border-color:#c8d6b8 !important;
 }
 body.dark-mode .pubs-summary-num{color:#112909 !important;}
 body.dark-mode .pubs-summary-label{color:#5a6b4a !important;}
 
+
+
+
+
+
+/* Leaf frame reserves real space — content cannot sit under it */
+:root{ --leaf-pad: 44px; }
+.main{
+  padding: var(--leaf-pad) !important;
+  box-sizing: border-box;
+  position: relative;
+}
+/* Draw leaves in the padding gutter via outline on a full-size pseudo that doesn't cover content */
+.main::after{
+  content:"";
+  pointer-events:none;
+  position:absolute;
+  inset:0;
+  z-index:0;
+  border: var(--leaf-pad) solid transparent;
+  border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='%2358a05a'%3E%3Cpath d='M8 14c0-8 10-12 16-8 4 2 6 8 4 12-6 2-14 2-20-4z'/%3E%3Cpath d='M28 8c2-8 12-10 18-4 3 3 4 9 1 12-7 0-14-2-19-8z'/%3E%3Cpath d='M50 6c4-8 14-8 18-2 3 4 2 10-2 12-6-2-12-4-16-10z'/%3E%3Cpath d='M72 10c6-8 16-6 18 0 2 5 0 10-4 12-6-4-12-6-14-12z'/%3E%3C/g%3E%3Cg fill='%233d8f48'%3E%3Cpath d='M82 22c8 0 12 10 8 16-2 4-8 6-12 4-2-6-2-14 4-20z'/%3E%3Cpath d='M88 44c8 2 10 12 4 18-3 3-9 4-12 1 0-7 2-14 8-19z'/%3E%3Cpath d='M90 66c8 4 8 14 2 18-4 3-10 2-12-2 2-6 4-12 10-16z'/%3E%3C/g%3E%3Cg fill='%2358a05a'%3E%3Cpath d='M78 82c0 8-10 12-16 8-4-2-6-8-4-12 6-2 14-2 20 4z'/%3E%3Cpath d='M56 88c-2 8-12 10-18 4-3-3-4-9-1-12 7 0 14 2 19 8z'/%3E%3Cpath d='M34 90c-4 8-14 8-18 2-3-4-2-10 2-12 6 2 12 4 16 10z'/%3E%3Cpath d='M14 86c-6 8-16 6-18 0-2-5 0-10 4-12 6 4 12 6 14 12z'/%3E%3C/g%3E%3Cg fill='%233d8f48'%3E%3Cpath d='M14 74c-8 0-12-10-8-16 2-4 8-6 12-4 2 6 2 14-4 20z'/%3E%3Cpath d='M8 52c-8-2-10-12-4-18 3-3 9-4 12-1 0 7-2 14-8 19z'/%3E%3Cpath d='M6 30c-8-4-8-14-2-18 4-3 10-2 12 2-2 6-4 12-10 16z'/%3E%3C/g%3E%3Cg fill='%2370b86e' opacity='0.9'%3E%3Cpath d='M6 8c2-6 10-8 14-4 2 3 2 7 0 9-5 0-10-1-14-5z'/%3E%3Cpath d='M88 8c6 2 8 10 4 14-3 2-7 2-9 0 0-5 1-10 5-14z'/%3E%3Cpath d='M88 88c-2 6-10 8-14 4-2-3-2-7 0-9 5 0 10 1 14 5z'/%3E%3Cpath d='M8 88c-6-2-8-10-4-14 3-2 7-2 9 0 0 5-1 10-5 14z'/%3E%3C/g%3E%3C/svg%3E") 30 round;
+  box-sizing:border-box;
+}
+.main > *{ position:relative; z-index:1; }
+/* Hide old fixed overlay leaf-frame */
+.leaf-frame{ display:none !important; }
+body.dark-mode .main::after{
+  opacity:0.8;
+  filter:brightness(0.9) saturate(0.92);
+}
+@media (max-width:860px){
+  :root{ --leaf-pad: 32px; }
+}
+#main-content::before, body::before{
+  content:none!important;display:none!important;border:none!important;
+}
+
 </style>
 </head>
 <body>
+<div class="leaf-frame" aria-hidden="true"></div>
 <a class="skip-link" href="#main-content">Skip to content</a>
 <script>try{if(localStorage.getItem('theme')==='dark')document.body.classList.add('dark-mode');}catch(e){}</script>
 
@@ -742,6 +780,10 @@ body.dark-mode .pubs-summary-label{color:#5a6b4a !important;}
 </ul>
 <div class="sidebar-foot">
 <div class="sidebar-foot-icons">
+<a aria-label="Web of Science" href="https://www.webofscience.com/wos/author/record/OZE-7490-2025" target="_blank" rel="noopener noreferrer" title="Web of Science">
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="16"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+</a>
+
 <a aria-label="LinkedIn" href="https://www.linkedin.com/in/syed-umer-hannan-2171a1337/" target="_blank" rel="noopener noreferrer">
 <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="16"><rect height="20" rx="3" width="20" x="2" y="2"></rect><path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"></path></svg>
 </a>
@@ -792,76 +834,76 @@ body.dark-mode .pubs-summary-label{color:#5a6b4a !important;}
 </div>
 
 <div class="pubs-summary" aria-label="Publication metrics summary">
-  <div class="pubs-summary-item"><span class="pubs-summary-num">8</span><span class="pubs-summary-label">Total</span></div>
+  <div class="pubs-summary-item"><span class="pubs-summary-num">9</span><span class="pubs-summary-label">Total</span></div>
   <div class="pubs-summary-item"><span class="pubs-summary-num">0</span><span class="pubs-summary-label">Citations</span></div>
   <div class="pubs-summary-item"><span class="pubs-summary-num">2</span><span class="pubs-summary-label">Peer-reviewed</span></div>
   <div class="pubs-summary-item"><span class="pubs-summary-num">2</span><span class="pubs-summary-label">Preprints</span></div>
-  <div class="pubs-summary-item"><span class="pubs-summary-num">2</span><span class="pubs-summary-label">Datasets</span></div>
+  <div class="pubs-summary-item"><span class="pubs-summary-num">3</span><span class="pubs-summary-label">Datasets</span></div>
 </div>
-<p class="pubs-summary-note">Grouped below by type. Citations from Scholar/Crossref when available; Zenodo reads where recorded.</p>
+<p class="pubs-summary-note">Grouped below by type. Open records on Zenodo; journal and preprint records listed separately. <a href="https://www.webofscience.com/wos/author/record/OZE-7490-2025" target="_blank" rel="noopener noreferrer">Web of Science profile</a>.</p>
 <div id="pubs-list">
-
 <div class="pubs-section" id="pubs-peer">
   <h2 class="section-label" style="margin-top:1.4rem;margin-bottom:0.9rem">Peer-reviewed</h2>
   <div class="pubs-section-list"><a class="card card-link" href="https://scholar.google.com/citations?user=HoDp67cAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
 <div class="card-date">Publication · 2026</div>
 <div class="card-title">Ovarian Tissue Cryopreservation in Turner Syndrome: A Narrative Review</div>
-<div class="card-body" style="margin-top:0.35rem;opacity:0.9">0 citations (Google Scholar)</div>
+
 </a>
 <a class="card card-link" href="https://doi.org/10.7759/cureus.97774" target="_blank" rel="noopener noreferrer">
 <div class="card-date">Publication · Cureus · 2025</div>
 <div class="card-title">Cutting Through the Debate: Surgical Resection Versus Surveillance-Based Approach for Kikuchi SM2/3 Colorectal Polyps</div>
-<div class="card-body" style="margin-top:0.35rem;opacity:0.9">0 citations (Crossref)</div><div class="card-tag">DOI 10.7759/cureus.97774</div>
+<div class="card-tag">DOI 10.7759/cureus.97774</div>
 </a></div>
 </div>
-
 <div class="pubs-section" id="pubs-preprint">
   <h2 class="section-label" style="margin-top:1.4rem;margin-bottom:0.9rem">Preprints</h2>
   <div class="pubs-section-list"><a class="card card-link" href="https://doi.org/10.5281/zenodo.23169639" target="_blank" rel="noopener noreferrer">
 <div class="card-date">Preprint · Zenodo · 2026</div>
 <div class="card-title">Target-Specific Partial Identification for Cardiomyocyte Regeneration Assays: Bounds, Sensitivity Analyses, and Design Implications</div>
-<div class="card-body" style="margin-top:0.45rem">Target-first partial-identification framework for cardiomyocyte regeneration studies: bounds, sensitivity analyses, and design implications.</div><div class="card-body" style="margin-top:0.35rem;opacity:0.9">0 citations (OpenAlex)</div><div class="card-tag">DOI 10.5281/zenodo.23169639</div>
+<div class="card-body" style="margin-top:0.45rem">Target-first partial-identification framework for cardiomyocyte regeneration studies: bounds, sensitivity analyses, and design implications.</div><div class="card-tag">DOI 10.5281/zenodo.23169639</div>
 </a>
 <a class="card card-link" href="https://scholar.google.com/citations?user=HoDp67cAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
 <div class="card-date">Publication · 2026</div>
 <div class="card-title">Upregulation of ELFN2 in TDP-43 Knockout HeLa M Cells Suggests a Compensatory Mechanism Modulating Glutamatergic Signaling on Chromosome 22</div>
-<div class="card-body" style="margin-top:0.35rem;opacity:0.9">0 citations (Google Scholar)</div>
+
 </a></div>
 </div>
-
 <div class="pubs-section" id="pubs-dataset">
   <h2 class="section-label" style="margin-top:1.4rem;margin-bottom:0.9rem">Datasets</h2>
-  <div class="pubs-section-list"><a class="card card-link" href="https://doi.org/10.5281/zenodo.23635668" target="_blank" rel="noopener noreferrer">
+  <div class="pubs-section-list"><a class="card card-link" href="https://doi.org/10.5281/zenodo.23915040" target="_blank" rel="noopener noreferrer">
+<div class="card-date">Dataset · Zenodo · 2026</div>
+<div class="card-title">Scope study of a third-order event predictor for loss of ignition at strong coupling: protocol, pilot data and audit trail</div>
+<div class="card-body" style="margin-top:0.45rem">Protocol, pilot addendum, code, pilot and confirmatory results, and audit trail for a scope study of the third-order event approximation for the upper ignition boundary in bistable networks.</div><div class="card-tag" style="margin-right:0.4rem">dataset</div><div class="card-tag">DOI 10.5281/zenodo.23915040</div>
+</a>
+<a class="card card-link" href="https://doi.org/10.5281/zenodo.23635669" target="_blank" rel="noopener noreferrer">
 <div class="card-date">Dataset · Zenodo · 2026</div>
 <div class="card-title">Species-Resolved Citation Network Data for Cardiac Regeneration Research, 2000–2026</div>
-<div class="card-body" style="margin-top:0.45rem">Bibliographic source data, citation edges, species-resolved fractional citation edges, analysis outputs, and code for a cross-species citation-flow analysis of cardiac regeneration research (9,893 papers; 63,788 edges).</div><div class="card-body" style="margin-top:0.35rem;opacity:0.9">0 citations (OpenAlex)</div><div class="card-tag" style="margin-right:0.4rem">dataset</div><div class="card-tag">DOI 10.5281/zenodo.23635668</div>
+<div class="card-body" style="margin-top:0.45rem">Bibliographic source data, citation edges, species-resolved fractional citation edges, analysis outputs, and code for a cross-species citation-flow analysis of cardiac regeneration research.</div><div class="card-tag" style="margin-right:0.4rem">dataset</div><div class="card-tag">DOI 10.5281/zenodo.23635669</div>
 </a>
-<a class="card card-link" href="https://doi.org/10.5281/zenodo.23634334" target="_blank" rel="noopener noreferrer">
+<a class="card card-link" href="https://doi.org/10.5281/zenodo.23634335" target="_blank" rel="noopener noreferrer">
 <div class="card-date">Dataset · Zenodo · 2026</div>
 <div class="card-title">Transdifferentiation Topic Dynamics in Bone-Marrow Cardiac Regeneration: Data and Analysis</div>
-<div class="card-body" style="margin-top:0.45rem">Derived data and analysis code for a longitudinal study of transdifferentiation-topic presence in bone-marrow cardiac-regeneration literature, 2000–2025 (source frozen 23 Oct 2026).</div><div class="card-body" style="margin-top:0.35rem;opacity:0.9">0 citations (OpenAlex)</div><div class="card-tag" style="margin-right:0.4rem">dataset</div><div class="card-tag">DOI 10.5281/zenodo.23634334</div>
+<div class="card-body" style="margin-top:0.45rem">Derived data and analysis code for a longitudinal study of transdifferentiation-topic presence in bone-marrow cardiac-regeneration literature, 2000–2025.</div><div class="card-tag" style="margin-right:0.4rem">dataset</div><div class="card-tag">DOI 10.5281/zenodo.23634335</div>
 </a></div>
 </div>
-
 <div class="pubs-section" id="pubs-software">
   <h2 class="section-label" style="margin-top:1.4rem;margin-bottom:0.9rem">Software</h2>
   <div class="pubs-section-list"><a class="card card-link" href="https://doi.org/10.5281/zenodo.23188384" target="_blank" rel="noopener noreferrer">
 <div class="card-date">Software · Zenodo · 2026</div>
 <div class="card-title">ElectroTrace: reproducible ECG/electrophysiology annotation and benchmarking</div>
-<div class="card-body" style="margin-top:0.45rem">Research software for ECG/electrophysiology annotation, detector benchmarking, leakage-aware validation, provenance, and calibration-grade ECG/EAM handoffs.</div><div class="card-body" style="margin-top:0.35rem;opacity:0.9">0 citations (OpenAlex)</div><div class="card-tag" style="margin-right:0.4rem">software</div><div class="card-tag">DOI 10.5281/zenodo.23188384</div>
+<div class="card-body" style="margin-top:0.45rem">Research software for ECG/electrophysiology annotation, detector benchmarking, leakage-aware validation, provenance, and calibration-grade ECG/EAM handoffs.</div><div class="card-tag" style="margin-right:0.4rem">software</div><div class="card-tag">DOI 10.5281/zenodo.23188384</div>
 </a></div>
 </div>
-
 <div class="pubs-section" id="pubs-other">
   <h2 class="section-label" style="margin-top:1.4rem;margin-bottom:0.9rem">Other open records</h2>
   <div class="pubs-section-list"><a class="card card-link" href="https://doi.org/10.5281/zenodo.22680867" target="_blank" rel="noopener noreferrer">
 <div class="card-date">Publication · Zenodo · 2026</div>
 <div class="card-title">Virelion Biotech Computational Cardiovascular Research Platform</div>
-<div class="card-body" style="margin-top:0.35rem;opacity:0.9">0 citations (Google Scholar) · 40 reads (Zenodo views) · 5 downloads</div><div class="card-tag">DOI 10.5281/zenodo.22680867</div>
+<div class="card-body" style="margin-top:0.45rem">Modular computational and research infrastructure for cardiovascular biology, cardiac regeneration, and regenerative medicine tooling.</div><div class="card-body" style="margin-top:0.35rem;opacity:0.9">7 downloads · 42 views</div><div class="card-tag">DOI 10.5281/zenodo.22680867</div>
 </a></div>
 </div>
 </div>
-<p id="pubs-updated" class="sidebar-updated" style="margin-top:1rem;opacity:0.7">Metrics refreshed 2026-10-28</p>
+<p id="pubs-updated" class="sidebar-updated" style="margin-top:1rem;opacity:0.7">Metrics refreshed 2026-11-03</p>
 
 </main>
 <footer>© 2026 Syed Umer Hannan  ·  Cardiac Regenerative Scientist</footer>

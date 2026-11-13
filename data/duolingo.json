@@ -1,22 +1,24 @@
 {
+  "updated": "2026-11-13T18:22:35Z",
   "username": "SyedUHannan",
-  "name": "Syed Umer Hannan",
-  "streak": 528,
-  "totalXp": 98892,
-  "learningLanguage": "fr",
+  "streak": 536,
+  "totalXp": 102378,
   "courses": [
     {
       "title": "French",
-      "xp": 90354,
-      "learningLanguage": "fr"
+      "xp": 91006,
+      "learning": "fr"
+    },
+    {
+      "title": "Latin",
+      "xp": 24,
+      "learning": "la"
     },
     {
       "title": "Ukrainian",
       "xp": 62,
-      "learningLanguage": "uk"
+      "learning": "uk"
     }
   ],
-  "profileUrl": "https://www.duolingo.com/u/SyedUHannan",
-  "widgetSvg": "https://duolingo-stats-card.vercel.app/api?username=SyedUHannan&theme=forest",
-  "updatedAt": "2026-11-05T13:51:38Z"
+  "profile": "https://www.duolingo.com/profile/SyedUHannan"
 }

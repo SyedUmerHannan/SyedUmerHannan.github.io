@@ -1,20 +1,35 @@
 {
-  "updated": "2026-10-28T09:14:09Z",
+  "updated": "2026-11-03T13:59:49Z",
   "scholar_profile": "https://scholar.google.com/citations?user=HoDp67cAAAAJ&hl=en",
   "orcid": "https://orcid.org/0009-0004-0282-8765",
   "researchgate_note": "ResearchGate blocks automated reads; set researchgate_reads manually per paper if needed.",
   "papers": [
+    {
+      "title": "Scope study of a third-order event predictor for loss of ignition at strong coupling: protocol, pilot data and audit trail",
+      "year": "2026",
+      "citations": 0,
+      "citations_source": "OpenAlex",
+      "scholar_url": "https://scholar.google.com/citations?user=HoDp67cAAAAJ&hl=en",
+      "url": "https://doi.org/10.5281/zenodo.23915040",
+      "doi": "10.5281/zenodo.23915040",
+      "venue": "Zenodo",
+      "type": "dataset",
+      "summary": "Protocol, pilot addendum, code, pilot and confirmatory results, and audit trail for a scope study of the third-order event approximation for the upper ignition boundary in bistable networks.",
+      "researchgate_reads": null,
+      "reads": null,
+      "reads_source": null
+    },
     {
       "title": "Species-Resolved Citation Network Data for Cardiac Regeneration Research, 2000–2026",
       "year": "2026",
       "citations": 0,
       "citations_source": "OpenAlex",
       "scholar_url": "https://scholar.google.com/citations?user=HoDp67cAAAAJ&hl=en",
-      "url": "https://doi.org/10.5281/zenodo.23635668",
-      "doi": "10.5281/zenodo.23635668",
+      "url": "https://doi.org/10.5281/zenodo.23635669",
+      "doi": "10.5281/zenodo.23635669",
       "venue": "Zenodo",
       "type": "dataset",
-      "summary": "Bibliographic source data, citation edges, species-resolved fractional citation edges, analysis outputs, and code for a cross-species citation-flow analysis of cardiac regeneration research (9,893 papers; 63,788 edges).",
+      "summary": "Bibliographic source data, citation edges, species-resolved fractional citation edges, analysis outputs, and code for a cross-species citation-flow analysis of cardiac regeneration research.",
       "researchgate_reads": null,
       "reads": null,
       "reads_source": null
@@ -25,11 +40,11 @@
       "citations": 0,
       "citations_source": "OpenAlex",
       "scholar_url": "https://scholar.google.com/citations?user=HoDp67cAAAAJ&hl=en",
-      "url": "https://doi.org/10.5281/zenodo.23634334",
-      "doi": "10.5281/zenodo.23634334",
+      "url": "https://doi.org/10.5281/zenodo.23634335",
+      "doi": "10.5281/zenodo.23634335",
       "venue": "Zenodo",
       "type": "dataset",
-      "summary": "Derived data and analysis code for a longitudinal study of transdifferentiation-topic presence in bone-marrow cardiac-regeneration literature, 2000–2025 (source frozen 23 Oct 2026).",
+      "summary": "Derived data and analysis code for a longitudinal study of transdifferentiation-topic presence in bone-marrow cardiac-regeneration literature, 2000–2025.",
       "researchgate_reads": null,
       "reads": null,
       "reads_source": null
@@ -68,16 +83,18 @@
       "title": "Virelion Biotech Computational Cardiovascular Research Platform",
       "year": "2026",
       "citations": 0,
-      "citations_source": "Google Scholar",
+      "citations_source": "OpenAlex",
       "scholar_url": "https://scholar.google.com/citations?user=HoDp67cAAAAJ&hl=en",
       "url": "https://doi.org/10.5281/zenodo.22680867",
       "doi": "10.5281/zenodo.22680867",
       "venue": "Zenodo",
+      "type": "publication",
+      "summary": "Modular computational and research infrastructure for cardiovascular biology, cardiac regeneration, and regenerative medicine tooling.",
       "researchgate_reads": null,
-      "reads": 40,
-      "reads_source": "Zenodo views",
-      "downloads": 5,
-      "type": "publication"
+      "reads": null,
+      "reads_source": null,
+      "downloads": 7,
+      "views": 42
     },
     {
       "title": "Ovarian Tissue Cryopreservation in Turner Syndrome: A Narrative Review",
@@ -119,5 +136,5 @@
       "reads_source": null
     }
   ],
-  "zenodo_note": "Datasets and software from Zenodo profile (via OpenAlex). Zenodo API was blocked at refresh time; metrics for new records may lag."
+  "zenodo_note": "Zenodo: datasets 23915040, 23635669, 23634335; ElectroTrace; CardioReg-Bounds; Virelion platform."
 }

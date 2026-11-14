@@ -6,10 +6,10 @@
 <meta name="theme-color" content="#1f7a3a"/>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Research directions: cardiac regeneration, cardiomyocyte maturation, and open tools for cardiac science." name="description"/>
+<meta content="Publications and preprints by Syed Umer Hannan in bioinformatics, clinical review, and related areas." name="description"/>
 <meta content="cardiac regenerative medicine, cardiology, stem cell cardiology, myocardial repair, heart regeneration, Virelion Biotech, Syed Umer Hannan" name="keywords"/>
 <meta content="Research · Syed Umer Hannan" property="og:title"/>
-<meta content="Research directions: cardiac regeneration, cardiomyocyte maturation, and open tools for cardiac science." property="og:description"/>
+<meta content="Publications and preprints by Syed Umer Hannan in bioinformatics, clinical review, and related areas." property="og:description"/>
 <meta content="website" property="og:type"/>
 <meta content="summary" name="twitter:card"/>
 <meta content="@syedumerhannan" name="twitter:site"/>
@@ -259,7 +259,7 @@ body.dark-mode .series-banner{background:var(--paper);border:1px solid var(--pap
 .series-label-tag{font-family:var(--mono);font-size:0.66rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:0.5rem}
 .series-title{font-family:var(--display);font-weight:600;font-size:1.55rem;color:#f5ece4;margin-bottom:0.6rem;letter-spacing:-0.005em}
 .series-desc{font-size:0.88rem;color:var(--ink4);font-weight:400;line-height:1.7;margin:0}
-.research-grid{display:none !important;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--paper3);border:1px solid var(--paper3);border-radius:var(--r-md);overflow:hidden;margin-bottom:2rem}
+.research-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--paper3);border:1px solid var(--paper3);border-radius:var(--r-md);overflow:hidden;margin-bottom:2rem}
 .research-card{background:#fff;padding:1.8rem 2rem;transition:background.25s ease,transform.25s ease}
 .research-card:hover{background:var(--paper2);transform:translateY(-2px)}
 .research-icon{font-family:var(--mono);font-weight:700;font-size:0.72rem;color:var(--accent);border:1px solid var(--paper3);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;margin-bottom:0.7rem}
@@ -284,7 +284,7 @@ body.dark-mode.vlp-link{background:var(--paper2)}
 .reading-tag{font-family:var(--mono);font-size:0.68rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink3);padding-top:2px}
 .reading-title{font-size:0.9rem;color:var(--ink);font-weight:400;line-height:1.5;margin-bottom:0.2rem}
 .reading-meta{font-family:var(--mono);font-size:0.7rem;color:var(--ink4);letter-spacing:0.06em}
-@media(max-width:720px){.research-grid{display:none !important;grid-template-columns:1fr}.reading-item{grid-template-columns:1fr;gap:0.3rem}}
+@media(max-width:720px){.research-grid{grid-template-columns:1fr}.reading-item{grid-template-columns:1fr;gap:0.3rem}}
 .photos-coming-soon{border:1px solid var(--paper3);border-radius:var(--r-md);padding:4rem 2rem;display:flex;align-items:center;justify-content:center;background:#fff}
 
 /* Split-screen sign-in (private area gate) */
@@ -338,7 +338,7 @@ body.private-mode.container{padding:0;max-width:none;margin:0}
 .cv-entry,.cv-section-head{page-break-inside:avoid}
 }
 
-.status-summary-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--paper3);border:1px solid var(--paper3);border-radius:var(--r-md);overflow:hidden;margin-top:1.2rem;margin-bottom:2rem}
+.status-summary-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--paper3);border:1px solid var(--paper3);border-radius:var(--r-md);overflow:hidden;margin-top:1.2rem;margin-bottom:2rem}
 .status-cell{background:#fff;padding:1.3rem 1.2rem;text-align:center;transition:background.25s ease}
 .status-cell:hover{background:var(--paper2)}
 .status-label{font-family:var(--mono);font-size:0.66rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink3);margin-bottom:0.6rem}
@@ -391,13 +391,14 @@ body.dark-mode.human-note{background:rgba(224,107,63,0.08);border-left-color:var
 .vlp-link:hover{transform:translateY(-1px)}
 .pillar:hover{transform:translateX(2px)}
 
+.pub-note{font-size:0.9rem;color:var(--ink2);margin:0 0 1.4rem;max-width:36em}
 
 .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
 .skip-link:focus{position:fixed;left:1rem;top:1rem;width:auto;height:auto;padding:0.6rem 1rem;background:var(--panel);color:#fff;z-index:9999;border-radius:6px}
 h1.page-title{font-size:0.68rem;font-weight:500;margin:0 0 1.9rem}
 a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .nav-hamburger{background:transparent;border:none;cursor:pointer}
-.research-lede{font-size:1.02rem;color:var(--ink2);line-height:1.7;max-width:38em;margin:0 0 1.5rem}
+.pub-lede{font-size:1.02rem;color:var(--ink2);line-height:1.7;max-width:36em;margin:0 0 1.2rem}
 
 /* warm design polish */
 .card{border-radius:12px}
@@ -491,694 +492,6 @@ body{font-family:'Roboto Slab',Georgia,serif;font-size:17px;line-height:1.75}
 .series-banner{background:#e2ead6 !important;border-left:4px solid #f8ca5d !important}
 
 
-/* Research flow — continuous sections, not separate boxes */
-.research-flow{margin:1.5rem 0 2rem;border-top:1px solid var(--paper3)}
-.research-step{
-  display:grid;
-  grid-template-columns:3.2rem 1fr;
-  gap:0.8rem 1.2rem;
-  padding:1.4rem 0;
-  border-bottom:1px solid var(--paper3);
-}
-.research-step:last-child{border-bottom:none}
-.research-step-num{
-  font-family:var(--display);
-  font-size:0.85rem;
-  font-weight:600;
-  color:var(--accent);
-  padding-top:0.15rem;
-}
-.research-step h3{
-  font-family:var(--display);
-  font-size:1.05rem;
-  font-weight:600;
-  color:var(--ink);
-  margin:0 0 0.45rem;
-}
-.research-step p{
-  font-size:0.95rem;
-  color:var(--ink2);
-  line-height:1.7;
-  margin:0 0 0.5rem;
-}
-.research-step .meta{
-  font-family:var(--mono);
-  font-size:0.68rem;
-  color:var(--ink3);
-  letter-spacing:0.04em;
-}
-.reading-list{margin-top:0.5rem}
-.reading-item{
-  padding:1rem 0;
-  border-bottom:1px solid var(--paper3);
-  display:grid;
-  grid-template-columns:7.5rem 1fr;
-  gap:0.8rem;
-}
-.reading-item a{background:none;font-weight:500}
-
-
-/* Research cards — Schmehl-style work grid + Baldoni hover */
-.research-lede{font-size:1.05rem;color:var(--ink2);line-height:1.7;max-width:38em;margin:0 0 1.6rem}
-.r-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:1rem;
-  margin:0 0 1.5rem;
-}
-.r-card{
-  background:var(--paper);
-  border:1px solid var(--paper3);
-  border-radius:14px;
-  padding:1.35rem 1.4rem;
-  transition:transform .25s ease, box-shadow .25s ease, border-color .25s;
-  box-shadow:0 1px 0 rgba(17,41,9,0.04);
-}
-.r-card:hover{
-  transform:translateY(-3px);
-  border-color:#1f7a3a;
-  box-shadow:0 10px 24px -14px rgba(17,41,9,0.2);
-}
-.r-num{
-  font-family:var(--display);
-  font-size:0.72rem;
-  font-weight:600;
-  color:#1f7a3a;
-  letter-spacing:0.08em;
-  margin-bottom:0.5rem;
-}
-.r-title{
-  font-family:var(--display);
-  font-size:1.12rem;
-  font-weight:600;
-  color:var(--ink);
-  margin:0 0 0.55rem;
-  line-height:1.25;
-}
-.r-body{
-  font-size:0.92rem;
-  color:var(--ink2);
-  line-height:1.65;
-  margin:0 0 0.85rem;
-}
-.r-tags{display:flex;flex-wrap:wrap;gap:0.35rem}
-.r-tags span{
-  font-family:var(--mono);
-  font-size:0.62rem;
-  letter-spacing:0.04em;
-  padding:3px 9px;
-  border-radius:999px;
-  background:#e2ead6;
-  color:#112909;
-  border:1px solid #c8d6b8;
-}
-.r-link{margin:0.7rem 0 0;font-size:0.85rem}
-.r-link a{color:#1f7a3a;font-weight:600;background:none}
-
-.paper-strip{border-top:1px solid var(--paper3);margin-top:0.5rem}
-.paper-row{
-  display:grid;
-  grid-template-columns:6.5rem 1fr auto;
-  gap:0.8rem 1rem;
-  align-items:baseline;
-  padding:0.95rem 0;
-  border-bottom:1px solid var(--paper3);
-  text-decoration:none;
-  color:inherit;
-  background:none !important;
-  transition:background .2s;
-}
-.paper-row:hover{background:rgba(31,122,58,0.04)}
-.paper-tag{
-  font-family:var(--mono);
-  font-size:0.65rem;
-  letter-spacing:0.06em;
-  text-transform:uppercase;
-  color:#1f7a3a;
-}
-.paper-title{font-size:0.92rem;color:var(--ink);line-height:1.4;font-weight:500}
-.paper-meta{font-family:var(--mono);font-size:0.68rem;color:var(--ink3);white-space:nowrap}
-@media(max-width:720px){
-  .r-grid{grid-template-columns:1fr}
-  .paper-row{grid-template-columns:1fr;gap:0.25rem}
-  .paper-meta{white-space:normal}
-}
-
-
-/* Research bento — asymmetric spans (Effect.Labs / CodeShack pattern) */
-.research-lede{font-size:1.05rem;color:var(--ink2);line-height:1.7;max-width:36em;margin:0 0 1.4rem}
-.bento-research{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  grid-auto-rows:minmax(140px,auto);
-  gap:12px;
-  margin:0 0 1.5rem;
-}
-.br-card{
-  background:var(--paper);
-  border:1px solid var(--paper3);
-  border-radius:18px;
-  padding:1.25rem 1.35rem;
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-end;
-  transition:transform .2s, box-shadow .2s, border-color .2s;
-  box-shadow:0 6px 16px -10px rgba(17,41,9,0.1);
-}
-.br-card:hover{
-  transform:translateY(-4px);
-  border-color:#1f7a3a;
-  box-shadow:0 16px 28px -12px rgba(17,41,9,0.18);
-}
-.br-card.br-large{
-  grid-column:span 2;
-  grid-row:span 2;
-  background:linear-gradient(160deg,#eef3e6 0%,#e2ead6 55%,#eef3e6 100%);
-  border-color:#c8d6b8;
-}
-.br-card.br-wide{grid-column:span 2}
-.br-num{
-  font-family:var(--display);
-  font-size:0.7rem;
-  font-weight:600;
-  color:#1f7a3a;
-  letter-spacing:0.1em;
-  margin-bottom:0.4rem;
-}
-.br-title{
-  font-family:var(--display);
-  font-size:1.15rem;
-  font-weight:600;
-  color:var(--ink);
-  margin:0 0 0.45rem;
-  line-height:1.25;
-}
-.br-large .br-title{font-size:1.35rem}
-.br-body{
-  font-size:0.9rem;
-  color:var(--ink2);
-  line-height:1.6;
-  margin:0 0 0.75rem;
-}
-.br-tags{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:auto}
-.br-tags span{
-  font-family:var(--mono);
-  font-size:0.6rem;
-  letter-spacing:0.04em;
-  padding:3px 8px;
-  border-radius:999px;
-  background:#e2ead6;
-  color:#112909;
-  border:1px solid #c8d6b8;
-}
-.br-link{margin:0.6rem 0 0;font-size:0.85rem}
-.br-link a{color:#1f7a3a;font-weight:600;background:none}
-.paper-strip{border-top:1px solid var(--paper3);margin-top:0.5rem}
-.paper-row{
-  display:grid;
-  grid-template-columns:6.5rem 1fr auto;
-  gap:0.8rem 1rem;
-  align-items:baseline;
-  padding:0.9rem 0;
-  border-bottom:1px solid var(--paper3);
-  text-decoration:none;
-  color:inherit;
-  background:none !important;
-}
-.paper-row:hover{background:rgba(31,122,58,0.04)}
-.paper-tag{font-family:var(--mono);font-size:0.65rem;letter-spacing:0.06em;text-transform:uppercase;color:#1f7a3a}
-.paper-title{font-size:0.92rem;color:var(--ink);line-height:1.4;font-weight:500}
-.paper-meta{font-family:var(--mono);font-size:0.68rem;color:var(--ink3);white-space:nowrap}
-@media(max-width:800px){
-  .bento-research{grid-template-columns:1fr 1fr}
-  .br-card.br-large{grid-column:span 2;grid-row:span 1}
-  .br-card.br-wide{grid-column:span 2}
-}
-@media(max-width:520px){
-  .bento-research{grid-template-columns:1fr}
-  .br-card.br-large,.br-card.br-wide{grid-column:span 1}
-  .paper-row{grid-template-columns:1fr;gap:0.2rem}
-  .paper-meta{white-space:normal}
-}
-/* kill old equal grids */
-.r-grid,.research-grid{display:none !important}
-
-
-.research-lede{font-size:1.05rem;color:var(--ink2);line-height:1.7;max-width:36em;margin:0 0 1.2rem}
-.constellation{margin:0 0 1.5rem;max-width:640px}
-.constellation-svg{width:100%;height:auto;display:block;border-radius:16px;border:1px solid var(--paper3);box-shadow:0 8px 24px -14px rgba(17,41,9,0.2)}
-.node-link{cursor:pointer}
-.node-link:hover circle{filter:brightness(1.08)}
-.node-detail{border-left:3px solid #1f7a3a;padding:0.9rem 0 0.9rem 1.1rem;margin:0 0 0.8rem;scroll-margin-top:5rem}
-.nd-num{font-family:var(--display);font-size:0.85rem;font-weight:600;color:#1f7a3a;margin-bottom:0.35rem}
-.node-detail p{font-size:0.95rem;color:var(--ink2);line-height:1.65;margin:0 0 0.5rem}
-.nd-tags{display:flex;flex-wrap:wrap;gap:0.3rem}
-.nd-tags span{font-family:var(--mono);font-size:0.6rem;letter-spacing:0.04em;padding:3px 8px;border-radius:999px;background:#e2ead6;color:#112909;border:1px solid #c8d6b8}
-.nd-link{margin:0.4rem 0 0}.nd-link a{color:#1f7a3a;font-weight:600;background:none}
-.paper-strip{border-top:1px solid var(--paper3);margin-top:0.5rem}
-.paper-row{display:grid;grid-template-columns:6.5rem 1fr auto;gap:0.8rem 1rem;align-items:baseline;padding:0.9rem 0;border-bottom:1px solid var(--paper3);text-decoration:none;color:inherit;background:none !important}
-.paper-row:hover{background:rgba(31,122,58,0.04)}
-.paper-tag{font-family:var(--mono);font-size:0.65rem;letter-spacing:0.06em;text-transform:uppercase;color:#1f7a3a}
-.paper-title{font-size:0.92rem;color:var(--ink);line-height:1.4;font-weight:500}
-.paper-meta{font-family:var(--mono);font-size:0.68rem;color:var(--ink3);white-space:nowrap}
-@media(max-width:520px){.paper-row{grid-template-columns:1fr;gap:0.2rem}.paper-meta{white-space:normal}}
-.r-grid,.research-grid,.bento-research{display:none !important}
-
-
-.research-lede{font-size:1.05rem;color:var(--ink2);line-height:1.7;max-width:36em;margin:0 0 1rem}
-.constellation-wrap{
-  position:relative;
-  max-width:100%;
-  margin:0 0 0.6rem;
-}
-.constellation{
-  width:100%;
-  max-width:920px;
-}
-.constellation-svg{
-  width:100%;
-  height:auto;
-  min-height:320px;
-  display:block;
-  border-radius:18px;
-  border:1px solid var(--paper3);
-  box-shadow:0 12px 36px -16px rgba(17,41,9,0.28);
-}
-.node-orbit{cursor:pointer}
-.node-orbit .ring{transition:fill .2s, stroke-width .2s, filter .2s}
-.node-orbit:hover .ring,
-.node-orbit.is-active .ring{
-  fill:#1f7a3a;
-  stroke:#f8ca5d;
-  stroke-width:2.5;
-  filter:url(#softGlow);
-}
-.node-orbit:hover text,
-.node-orbit.is-active text{fill:#eef3e6}
-.node-orbit:hover text:first-of-type,
-.node-orbit.is-active text:first-of-type{fill:#f8ca5d}
-.edge.is-hot{stroke-opacity:0.75 !important;stroke-width:2.5}
-
-/* floating detail panel (graph info-panel pattern) */
-.constellation-panel{
-  position:absolute;
-  right:12px;
-  top:12px;
-  width:min(300px, 88%);
-  background:#eef3e6;
-  border:1.5px solid #1f7a3a;
-  border-radius:14px;
-  padding:1.1rem 1.2rem 1.15rem;
-  box-shadow:0 16px 40px -12px rgba(17,41,9,0.35);
-  z-index:20;
-  animation:panelIn .25s ease;
-}
-.constellation-panel[hidden]{display:none !important}
-@keyframes panelIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-.panel-close{
-  position:absolute;top:8px;right:10px;
-  border:none;background:transparent;font-size:1.35rem;line-height:1;
-  color:#1f7a3a;cursor:pointer;padding:2px 6px;
-}
-.panel-num{font-family:var(--display);font-size:0.72rem;letter-spacing:0.1em;color:#1f7a3a;font-weight:700;margin-bottom:0.25rem}
-.panel-title{font-family:var(--display);font-size:1.1rem;font-weight:600;color:var(--ink);margin:0 0 0.5rem;line-height:1.3;padding-right:1.2rem}
-.panel-body{font-size:0.9rem;color:var(--ink2);line-height:1.6;margin:0 0 0.7rem}
-.panel-tags{display:flex;flex-wrap:wrap;gap:0.3rem}
-.panel-tags span{
-  font-family:var(--mono);font-size:0.58rem;letter-spacing:0.04em;
-  padding:3px 8px;border-radius:999px;background:#e2ead6;color:#112909;border:1px solid #c8d6b8;
-}
-.panel-link{margin:0.65rem 0 0}
-.panel-link a{color:#1f7a3a;font-weight:600;background:none;font-size:0.88rem}
-.constellation-hint{
-  font-family:var(--mono);font-size:0.68rem;color:var(--ink3);
-  margin:0 0 1.5rem;letter-spacing:0.04em;
-}
-.paper-strip{border-top:1px solid var(--paper3);margin-top:0.5rem}
-.paper-row{display:grid;grid-template-columns:6.5rem 1fr auto;gap:0.8rem 1rem;align-items:baseline;padding:0.9rem 0;border-bottom:1px solid var(--paper3);text-decoration:none;color:inherit;background:none !important}
-.paper-row:hover{background:rgba(31,122,58,0.04)}
-.paper-tag{font-family:var(--mono);font-size:0.65rem;letter-spacing:0.06em;text-transform:uppercase;color:#1f7a3a}
-.paper-title{font-size:0.92rem;color:var(--ink);line-height:1.4;font-weight:500}
-.paper-meta{font-family:var(--mono);font-size:0.68rem;color:var(--ink3);white-space:nowrap}
-@media(max-width:700px){
-  .constellation-panel{position:relative;right:auto;top:auto;width:100%;margin-top:0.75rem}
-  .paper-row{grid-template-columns:1fr;gap:0.2rem}
-  .paper-meta{white-space:normal}
-}
-.node-detail,.r-grid,.research-grid,.bento-research{display:none !important}
-
-
-.virelion-stack-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:0.7rem;
-  margin:0 0 0.9rem;
-}
-.vs-card{
-  display:block;
-  background:var(--paper);
-  border:1px solid var(--paper3);
-  border-radius:12px;
-  padding:0.95rem 1rem;
-  text-decoration:none;
-  color:inherit;
-  background-image:none !important;
-  transition:transform .2s, border-color .2s, box-shadow .2s;
-}
-.vs-card:hover{
-  transform:translateY(-3px);
-  border-color:#1f7a3a;
-  box-shadow:0 10px 22px -12px rgba(17,41,9,0.2);
-}
-.vs-layer{
-  font-family:var(--mono);
-  font-size:0.58rem;
-  letter-spacing:0.1em;
-  text-transform:uppercase;
-  color:#1f7a3a;
-  margin-bottom:0.3rem;
-}
-.vs-name{
-  font-family:var(--display);
-  font-size:0.95rem;
-  font-weight:600;
-  color:var(--ink);
-  margin-bottom:0.25rem;
-}
-.vs-desc{font-size:0.8rem;color:var(--ink2);line-height:1.4}
-.stack-foot{font-size:0.85rem;color:var(--ink3);line-height:1.55;max-width:42em}
-.stack-foot a{color:#1f7a3a;font-weight:600;background:none}
-@media(max-width:800px){.virelion-stack-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:480px){.virelion-stack-grid{grid-template-columns:1fr}}
-
-
-.tools-prompt-wrap{margin:0 0 1.5rem;max-width:920px}
-.tools-prompt{
-  display:flex;
-  align-items:center;
-  gap:0.9rem;
-  width:100%;
-  text-align:left;
-  padding:1rem 1.15rem;
-  border-radius:14px;
-  border:1.5px solid var(--paper3);
-  background:linear-gradient(145deg,#eef3e6 0%,#e2ead6 100%);
-  cursor:pointer;
-  transition:border-color .2s, box-shadow .2s, transform .2s;
-  font:inherit;
-  color:inherit;
-}
-.tools-prompt:hover,
-.tools-prompt.is-open{
-  border-color:#1f7a3a;
-  box-shadow:0 10px 24px -12px rgba(17,41,9,0.22);
-  transform:translateY(-2px);
-}
-.tools-prompt-icon{
-  width:2.2rem;height:2.2rem;border-radius:10px;
-  display:flex;align-items:center;justify-content:center;
-  background:#1f7a3a;color:#eef3e6;font-size:1.1rem;flex-shrink:0;
-}
-.tools-prompt-text{display:flex;flex-direction:column;gap:0.15rem;flex:1}
-.tools-prompt-text strong{font-family:var(--display);font-size:1.02rem;color:#112909;font-weight:600}
-.tools-prompt-sub{font-family:var(--mono);font-size:0.72rem;color:#5a6b4a;letter-spacing:0.02em}
-.tools-prompt-chevron{
-  font-size:1rem;color:#1f7a3a;transition:transform .25s;
-}
-.tools-prompt.is-open .tools-prompt-chevron{transform:rotate(180deg)}
-.tools-panel{
-  margin-top:0.75rem;
-  animation:panelIn .28s ease;
-}
-.tools-panel[hidden]{display:none !important}
-
-
-/* richer constellation nodes */
-.constellation-svg{background:transparent}
-.node-orbit .hex,
-.node-orbit .box,
-.node-orbit .diamond,
-.node-orbit .oct{
-  transition:fill .22s, stroke-width .22s, filter .22s, transform .22s;
-  transform-box:fill-box;
-  transform-origin:center;
-}
-.node-orbit:hover .hex,
-.node-orbit:hover .box,
-.node-orbit:hover .diamond,
-.node-orbit:hover .oct,
-.node-orbit.is-active .hex,
-.node-orbit.is-active .box,
-.node-orbit.is-active .diamond,
-.node-orbit.is-active .oct{
-  fill:#1f7a3a;
-  stroke:#f8ca5d;
-  stroke-width:2.5;
-  filter:url(#softGlow);
-}
-.node-orbit:hover .glyph,
-.node-orbit.is-active .glyph{stroke:#eef3e6}
-.node-orbit:hover .glyph circle[fill],
-.node-orbit.is-active .glyph circle[fill]{fill:#f8ca5d}
-.node-orbit:hover text,
-.node-orbit.is-active text{fill:#1f7a3a}
-.node-orbit:hover .halo,
-.node-orbit.is-active .halo{
-  stroke-opacity:0.45;
-  animation:haloSpin 12s linear infinite;
-}
-@keyframes haloSpin{to{stroke-dashoffset:-120}}
-.core-pulse{
-  transform-origin:450px 280px;
-  animation:corePulse 3.2s ease-in-out infinite;
-}
-.core-pulse.p2{animation-delay:0.6s;animation-duration:4s}
-.core-pulse{transform-box:fill-box;transform-origin:center}
-@keyframes corePulse{
-  0%,100%{transform:scale(1);opacity:0.35}
-  50%{transform:scale(1.28);opacity:0.08}
-}
-.twinkle{animation:twinkle 3.5s ease-in-out infinite}
-.twinkle.t2{animation-delay:1.1s;animation-duration:4.2s}
-.twinkle.t3{animation-delay:2s;animation-duration:3.8s}
-@keyframes twinkle{
-  0%,100%{opacity:0.12}
-  50%{opacity:0.35}
-}
-.edge-draw{
-  stroke-dasharray:8 6;
-  animation:edgeFlow 18s linear infinite;
-}
-@keyframes edgeFlow{to{stroke-dashoffset:-120}}
-.edge.is-hot{
-  stroke:#1f7a3a !important;
-  stroke-opacity:0.9 !important;
-  stroke-width:2.8 !important;
-  stroke-dasharray:none;
-  filter:url(#softGlow);
-}
-.node-orbit:hover .ring,
-.node-orbit.is-active .ring{/* legacy no-op */}
-@media (prefers-reduced-motion:reduce){
-  .twinkle,.core-pulse,.edge-draw,.node-orbit:hover .halo{animation:none !important}
-}
-
-
-
-/* Research atlas — panel OFF the graph (side column, not overlay) */
-.atlas-layout{
-  display:grid;
-  grid-template-columns:minmax(0,1fr) minmax(260px,300px);
-  gap:1.25rem;
-  align-items:stretch;
-  margin:0 0 0.5rem;
-  max-width:980px;
-}
-.atlas-stage{
-  position:relative;
-  min-height:480px;
-  overflow:hidden;
-  border:1px solid var(--paper3);
-  border-radius:22px;
-  background:
-    radial-gradient(ellipse at 50% 40%, rgba(31,122,58,.1), transparent 55%),
-    radial-gradient(ellipse at 80% 80%, rgba(17,41,9,.06), transparent 45%),
-    #eef3e6;
-  isolation:isolate;
-}
-.atlas-stage::before{
-  position:absolute;inset:0;content:"";
-  opacity:.28;
-  background-image:
-    linear-gradient(rgba(31,122,58,.14) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(31,122,58,.14) 1px, transparent 1px);
-  background-size:44px 44px;
-  mask-image:radial-gradient(circle at 50% 48%, #000 30%, transparent 78%);
-  pointer-events:none;
-}
-.atlas-guide{
-  position:absolute;top:12px;left:16px;z-index:3;
-  margin:0;
-  font-family:var(--mono);font-size:0.6rem;letter-spacing:0.1em;
-  text-transform:uppercase;color:var(--ink3);
-}
-.atlas-svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
-.atlas-line{
-  fill:none;
-  stroke:rgba(31,122,58,0.16);
-  stroke-width:1.4;
-  stroke-linecap:round;
-  transition:stroke .28s ease, stroke-width .28s ease, opacity .28s ease;
-}
-.atlas-line.active{
-  stroke:rgba(31,122,58,0.9);
-  stroke-width:2.2;
-  filter:drop-shadow(0 0 4px rgba(31,122,58,0.35));
-}
-.atlas-nodes{position:absolute;inset:0;z-index:2}
-.atlas-node{
-  position:absolute;z-index:2;
-  width:132px;min-height:70px;
-  padding:12px 14px;
-  border:1.5px solid rgba(31,122,58,0.2);
-  border-radius:14px;
-  color:var(--ink);
-  background:rgba(255,250,242,0.95);
-  box-shadow:0 10px 26px rgba(17,41,9,0.08);
-  transform:translate(-50%,-50%);
-  text-align:left;
-  cursor:pointer;
-  font:inherit;
-  transition:transform .28s ease, border-color .22s ease, background .22s ease, box-shadow .22s ease;
-}
-.atlas-node:hover{
-  z-index:4;
-  border-color:rgba(31,122,58,0.55);
-  background:#fff;
-  transform:translate(-50%,-50%) scale(1.05);
-  box-shadow:0 14px 32px rgba(31,122,58,0.16);
-}
-.atlas-node.active{
-  z-index:5;
-  border-color:#1f7a3a;
-  background:#fff;
-  transform:translate(-50%,-50%) scale(1.07);
-  box-shadow:
-    0 0 0 3px rgba(31,122,58,0.18),
-    0 16px 36px rgba(31,122,58,0.2);
-}
-.atlas-node b{
-  display:block;
-  color:#1f7a3a;
-  font-family:var(--mono);
-  font-size:0.56rem;
-  letter-spacing:0.09em;
-  font-weight:600;
-}
-.atlas-node span{
-  display:block;
-  margin-top:6px;
-  font-family:var(--display);
-  font-size:1.08rem;
-  line-height:1.15;
-  font-weight:600;
-  color:var(--ink);
-}
-.atlas-core{
-  width:156px;min-height:86px;
-  border-color:rgba(31,122,58,0.45);
-  background:linear-gradient(160deg, #e2ead6 0%, #fff8ee 100%);
-}
-.atlas-core span{font-size:1.22rem}
-.atlas-core.active{
-  box-shadow:
-    0 0 0 4px rgba(31,122,58,0.2),
-    0 18px 40px rgba(31,122,58,0.22);
-}
-
-/* PANEL — outside the graph, side column */
-.atlas-context{
-  position:relative;
-  z-index:1;
-  align-self:stretch;
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-start;
-  padding:1.25rem 1.2rem;
-  border:1px solid var(--paper3);
-  border-radius:18px;
-  background:linear-gradient(165deg, #fff8ee 0%, #eef3e6 100%);
-  box-shadow:0 12px 32px -14px rgba(17,41,9,0.2);
-  min-height:200px;
-}
-.atlas-context-label{
-  margin:0 0 0.5rem;
-  color:#1f7a3a;
-  font-family:var(--mono);
-  font-size:0.62rem;
-  letter-spacing:0.1em;
-  text-transform:uppercase;
-}
-.atlas-context h2{
-  margin:0 0 0.55rem;
-  font-family:var(--display);
-  font-size:1.4rem;
-  font-weight:600;
-  color:var(--ink);
-  line-height:1.2;
-}
-.atlas-context > p{
-  margin:0 0 0.85rem;
-  font-size:0.9rem;
-  color:var(--ink2);
-  line-height:1.55;
-  flex:1;
-}
-.atlas-related{
-  border-top:1px solid rgba(31,122,58,0.15);
-  padding-top:0.7rem;
-  margin-top:auto;
-}
-.atlas-related b{
-  display:block;
-  font-family:var(--mono);
-  font-size:0.56rem;
-  letter-spacing:0.08em;
-  text-transform:uppercase;
-  color:var(--ink3);
-  margin-bottom:0.4rem;
-}
-.atlas-related a{
-  display:block;
-  font-size:0.84rem;
-  color:#1f7a3a;
-  font-weight:600;
-  text-decoration:none;
-  background:none !important;
-  padding:0.25rem 0;
-  line-height:1.35;
-}
-.atlas-related a:hover{text-decoration:underline}
-.atlas-hint{
-  font-family:var(--mono);font-size:0.66rem;color:var(--ink3);
-  margin:0 0 1.5rem;letter-spacing:0.04em;
-  max-width:980px;
-}
-@media(max-width:820px){
-  .atlas-layout{
-    grid-template-columns:1fr;
-    gap:0.9rem;
-  }
-  .atlas-stage{min-height:420px}
-  .atlas-node{width:112px;min-height:62px;padding:10px 11px}
-  .atlas-node span{font-size:0.95rem}
-  .atlas-core{width:136px;min-height:76px}
-  .atlas-context{min-height:0}
-}
-/* hide old constellation pieces */
-.constellation-wrap,.constellation,.constellation-svg,.constellation-panel,.constellation-hint{display:none !important}
-
-
 /* Footer: paper-aligned, not sidebar panel */
 footer{
   text-align:center;
@@ -1267,23 +580,6 @@ body.dark-mode .ach-title{color:var(--ink)}
 body.dark-mode .ach-desc{color:var(--ink2)}
 body.dark-mode .achievement-item{border-bottom-color:var(--paper3)}
 
-
-
-body.dark-mode .atlas-context{
-  background:linear-gradient(165deg, #fff8ee 0%, #eef3e6 100%) !important;
-  border-color:#c8d6b8 !important;
-  color:#112909 !important;
-}
-body.dark-mode .atlas-context h2{color:#112909 !important;opacity:1 !important;}
-body.dark-mode .atlas-context > p{color:#2a3d1f !important;opacity:1 !important;}
-body.dark-mode .atlas-context-label{color:#1f7a3a !important;}
-body.dark-mode .atlas-related b{color:#5a6b4a !important;}
-body.dark-mode .atlas-related a{color:#1f7a3a !important;}
-body.dark-mode .atlas-node span{color:#112909 !important;opacity:1 !important;}
-body.dark-mode .atlas-node b{color:#1f7a3a !important;}
-body.dark-mode .atlas-node:not(.active){opacity:1 !important;filter:none !important;}
-body.dark-mode .atlas-node:not(.active) span{color:#1F2A24 !important;}
-body.dark-mode .research-lede{color:#D5CEC0 !important;}
 
 /* === Dark mode contrast fixes (paper panels + readable text) === */
 body.dark-mode .main{
@@ -1374,6 +670,48 @@ body.dark-mode .stack-foot{color:#5a6b4a !important;}
 body.dark-mode .stack-foot a{color:#1f7a3a !important;}
 
 
+.pubs-summary{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:0.75rem;
+  margin:0 0 1.1rem;
+  padding:1.15rem 1.2rem;
+  border-radius:14px;
+  border:1.5px solid var(--paper3);
+  background:linear-gradient(145deg,#fff8ee 0%,#e2ead6 100%);
+}
+.pubs-summary-item{display:flex;flex-direction:column;align-items:flex-start;gap:0.2rem}
+.pubs-summary-num{
+  font-family:var(--display);
+  font-size:1.65rem;
+  font-weight:700;
+  color:#112909;
+  line-height:1.1;
+}
+.pubs-summary-label{
+  font-family:var(--mono);
+  font-size:0.65rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:#5a6b4a;
+}
+.pubs-summary-note{
+  font-size:0.8rem;
+  color:var(--ink3);
+  margin:0 0 1.4rem;
+  line-height:1.5;
+}
+@media(max-width:560px){
+  .pubs-summary{grid-template-columns:1fr 1fr}
+}
+body.dark-mode .pubs-summary{
+  background:linear-gradient(145deg,#fff8ee 0%,#e2ead6 100%) !important;
+  border-color:#c8d6b8 !important;
+}
+body.dark-mode .pubs-summary-num{color:#112909 !important;}
+body.dark-mode .pubs-summary-label{color:#5a6b4a !important;}
+
+
 
 
 
@@ -1411,20 +749,340 @@ body.dark-mode .main::after{
 }
 
 
+/* Research atlas */
+.research-lede{max-width:42em;color:var(--ink2);margin:0 0 1.25rem;line-height:1.65}
+.atlas-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1.65fr) minmax(260px,320px);
+  gap:1rem;
+  align-items:stretch;
+  width:100%;
+  max-width:none;
+  margin:0 0 1.5rem;
+}
+.atlas-stage{
+  position:relative;
+  width:100%;
+  min-height:560px;
+  height:600px;
+  overflow:hidden;
+  border-radius:20px;
+  border:1.5px solid var(--paper3);
+  background:
+    radial-gradient(ellipse at 50% 48%, rgba(31,122,58,0.07), transparent 55%),
+    linear-gradient(180deg, #f3f7ee, var(--paper));
+}
+.atlas-stage::before{
+  position:absolute;inset:0;content:"";
+  opacity:.22;
+  background-image:
+    linear-gradient(rgba(31,122,58,.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(31,122,58,.12) 1px, transparent 1px);
+  background-size:28px 28px;
+  pointer-events:none;
+}
+.atlas-svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+.atlas-line{
+  fill:none;stroke:rgba(31,122,58,0.18);stroke-width:1.5;stroke-linecap:round;
+  transition:stroke .25s ease, stroke-width .25s ease;
+}
+.atlas-line.active{
+  stroke:rgba(31,122,58,0.9);stroke-width:2.4;
+  filter:drop-shadow(0 0 4px rgba(31,122,58,0.35));
+}
+.atlas-nodes{position:absolute;inset:0;z-index:2;pointer-events:none}
+.atlas-node{
+  position:absolute;
+  z-index:3;
+  pointer-events:auto;
+  width:132px;
+  min-height:54px;
+  padding:10px 12px;
+  transform:translate(-50%,-50%);
+  display:flex;align-items:center;justify-content:center;
+  text-align:center;
+  border:1.5px solid rgba(31,122,58,0.28);
+  border-radius:14px;
+  background:rgba(255,250,242,0.97);
+  color:#112909;
+  box-shadow:0 8px 22px rgba(17,41,9,0.1);
+  cursor:pointer;
+  font:inherit;
+  transition:transform .22s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.atlas-node:hover,.atlas-node.active{
+  transform:translate(-50%,-50%) scale(1.06);
+  z-index:5;
+  border-color:#1f7a3a;
+  box-shadow:0 0 0 3px rgba(31,122,58,0.18), 0 14px 30px rgba(31,122,58,0.2);
+}
+.atlas-core{
+  width:150px;min-height:62px;
+  background:linear-gradient(160deg,#e2ead6 0%,#fff8ee 100%);
+  border-color:rgba(31,122,58,0.45);
+}
+.atlas-node span{
+  display:block;margin:0;
+  font-family:var(--display),Georgia,serif;
+  font-size:0.92rem;line-height:1.2;font-weight:600;color:#112909;
+}
+.atlas-node b{display:none}
+.atlas-context{
+  border:1.5px solid var(--paper3);
+  border-radius:20px;
+  padding:1.25rem 1.35rem;
+  background:var(--paper);
+  min-height:560px;
+  box-shadow:0 10px 28px rgba(17,41,9,0.06);
+}
+.atlas-context-label{
+  font-family:var(--mono);font-size:0.62rem;letter-spacing:0.12em;
+  text-transform:uppercase;color:var(--accent);margin:0 0 0.75rem;
+}
+.atlas-context h2{
+  font-family:var(--display);font-size:1.45rem;line-height:1.25;
+  color:var(--ink);margin:0 0 0.75rem;font-weight:600;
+}
+.atlas-context p{color:var(--ink2);line-height:1.6;margin:0 0 1rem;font-size:0.95rem}
+.atlas-related{border-top:1px solid var(--paper3);padding-top:0.85rem;margin-top:auto}
+.atlas-related b{
+  display:block;font-family:var(--mono);font-size:0.6rem;letter-spacing:0.1em;
+  text-transform:uppercase;color:var(--ink3);margin-bottom:0.5rem;font-weight:600;
+}
+.atlas-related a{display:block;color:var(--accent);text-decoration:none;font-size:0.9rem;margin:0.25rem 0}
+.atlas-related a:hover{text-decoration:underline}
+@media (max-width:900px){
+  .atlas-layout{grid-template-columns:1fr}
+  .atlas-stage{height:480px;min-height:480px}
+  .atlas-context{min-height:auto}
+}
+
+/* Tools stack */
+.tools-prompt-wrap{margin:1.5rem 0 0.5rem;max-width:920px}
+.tools-prompt{
+  width:100%;display:flex;align-items:center;gap:0.85rem;
+  padding:0.95rem 1.15rem;border-radius:16px;
+  border:1.5px solid var(--paper3);background:var(--paper2);
+  cursor:pointer;font:inherit;text-align:left;color:var(--ink);
+}
+.tools-prompt-icon{
+  width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;
+  background:var(--accent);color:#fff;font-size:1.1rem;flex-shrink:0;
+}
+.tools-prompt-text{flex:1}
+.tools-prompt-text strong{display:block;font-size:1rem}
+.tools-prompt-sub{font-size:0.78rem;color:var(--ink3)}
+.tools-prompt-chevron{color:var(--ink3)}
+.tools-panel{
+  margin-top:0.65rem;padding:0.85rem;border-radius:16px;
+  border:1.5px solid var(--paper3);background:var(--paper2);
+}
+.virelion-stack-grid{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0.65rem;
+}
+.vs-card{
+  display:block;padding:0.85rem 0.9rem;border-radius:12px;
+  border:1px solid var(--paper3);background:var(--paper);
+  text-decoration:none;color:var(--ink);
+  transition:border-color .2s, transform .2s;
+}
+.vs-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.vs-layer{
+  font-family:var(--mono);font-size:0.58rem;letter-spacing:0.1em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:0.35rem;font-weight:600;
+}
+.vs-name{font-weight:600;font-size:0.95rem;margin-bottom:0.3rem;color:var(--ink)}
+.vs-desc{font-size:0.8rem;color:var(--ink2);line-height:1.45}
+@media (max-width:900px){.virelion-stack-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.virelion-stack-grid{grid-template-columns:1fr}}
+
+body.dark-mode .tools-panel,
+body.dark-mode .virelion-stack-grid{background:#0a0c09 !important}
+body.dark-mode .virelion-stack-grid{gap:10px;padding:10px}
+body.dark-mode .vs-card{
+  background:#1a2118 !important;border-color:#2a3326 !important;color:#e8efe0 !important;
+}
+body.dark-mode .vs-name{color:#f2f7ec !important}
+body.dark-mode .vs-desc{color:#b8c4a8 !important}
+body.dark-mode .vs-layer{color:#6fcf7a !important}
+body.dark-mode .tools-prompt{
+  background:#1a2118 !important;border-color:#2a3326 !important;color:#e8efe0 !important;
+}
+body.dark-mode .tools-prompt-text strong{color:#f2f7ec !important}
+body.dark-mode .tools-prompt-sub{color:#9aab8a !important}
+
 .paper-disclaimer{
-  font-size:0.88rem;
-  line-height:1.55;
-  color:var(--ink3);
-  max-width:40em;
-  margin:0.35rem 0 1rem;
-  padding:0.65rem 0.9rem;
-  border-left:3px solid var(--accent);
-  background:rgba(31,122,58,0.06);
+  font-size:0.88rem;line-height:1.55;color:var(--ink3);max-width:40em;
+  margin:0.35rem 0 1rem;padding:0.65rem 0.9rem;
+  border-left:3px solid var(--accent);background:rgba(31,122,58,0.06);
   border-radius:0 10px 10px 0;
 }
+.paper-strip{display:flex;flex-direction:column;gap:0.5rem;max-width:720px}
+.paper-row{
+  display:block;padding:0.75rem 0.9rem;border-radius:12px;
+  border:1px solid var(--paper3);background:var(--paper);text-decoration:none;color:var(--ink);
+}
+.paper-row:hover{border-color:var(--accent)}
+.paper-tag{
+  font-family:var(--mono);font-size:0.58rem;letter-spacing:0.08em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:0.25rem;
+}
+.paper-title{font-weight:600;font-size:0.95rem}
+
+
+/* RESEARCH PAGE: use full main column width */
+#research.page-section,
+#main-content{
+  max-width:none !important;
+  width:100% !important;
+}
+.main .container{
+  max-width:none !important;
+  width:100% !important;
+  padding-left:1rem !important;
+  padding-right:1rem !important;
+}
+.atlas-layout{
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) 300px !important;
+  gap:1rem !important;
+  width:100% !important;
+  max-width:none !important;
+}
+.atlas-stage{
+  width:100% !important;
+  min-height:640px !important;
+  height:640px !important;
+}
+.atlas-context{
+  min-height:640px !important;
+}
+@media (max-width:900px){
+  .atlas-layout{grid-template-columns:1fr !important}
+  .atlas-stage{height:520px !important;min-height:520px !important}
+  .atlas-context{min-height:auto !important}
+}
+/* papers readable in dark mode */
+body.dark-mode .paper-row,
+body.dark-mode a.paper-row{
+  background:#1a2118 !important;
+  border-color:#2a3326 !important;
+  color:#e8efe0 !important;
+}
+body.dark-mode .paper-title,
+body.dark-mode .paper-row{
+  color:#e8efe0 !important;
+}
+body.dark-mode .paper-tag{color:#6fcf7a !important}
 body.dark-mode .paper-disclaimer{
-  color:var(--ink2);
-  background:rgba(61,154,92,0.12);
+  color:#b8c4a8 !important;
+  background:rgba(61,154,92,0.12) !important;
+}
+body.dark-mode .paper-disclaimer a{color:#8fd99a !important}
+
+
+/* Map lines thin; nodes fully visible */
+.atlas-line{
+  stroke-width:0.9 !important;
+  stroke:rgba(31,122,58,0.22) !important;
+}
+.atlas-line.active{
+  stroke-width:1.8 !important;
+  stroke:rgba(31,122,58,0.85) !important;
+  filter:none !important;
+}
+.atlas-stage{
+  overflow:visible !important;
+}
+.atlas-node{
+  width:auto !important;
+  min-width:120px !important;
+  max-width:150px !important;
+  min-height:48px !important;
+  padding:0.55rem 0.75rem !important;
+  white-space:normal !important;
+  overflow:visible !important;
+  box-sizing:border-box !important;
+}
+.atlas-node span{
+  white-space:normal !important;
+  overflow:visible !important;
+  text-overflow:clip !important;
+  font-size:0.88rem !important;
+  line-height:1.2 !important;
+  word-break:normal !important;
+}
+.atlas-core{
+  min-width:130px !important;
+  max-width:160px !important;
+}
+
+
+/* 3D force graph research map */
+.atlas-layout{
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) minmax(260px,320px) !important;
+  gap:1rem !important;
+  width:100% !important;
+  max-width:none !important;
+  align-items:stretch !important;
+}
+#research-3d-graph{
+  width:100% !important;
+  height:640px !important;
+  min-height:640px !important;
+  border-radius:18px;
+  overflow:hidden;
+  border:1.5px solid var(--paper3);
+  background:#0b120e !important;
+}
+body:not(.dark-mode) #research-3d-graph{
+  background:#0f1a14 !important;
+  border-color:#1a2e22;
+}
+body.dark-mode #research-3d-graph{
+  background:#050806 !important;
+  border-color:#1a2118;
+}
+.atlas-context{
+  min-height:640px !important;
+  background:var(--paper);
+  border:1.5px solid var(--paper3);
+  border-radius:18px;
+  padding:1.25rem 1.35rem;
+}
+body.dark-mode .atlas-context{
+  background:#141a14 !important;
+  border-color:#2a3326 !important;
+  color:#e8efe0 !important;
+}
+body.dark-mode .atlas-context h2{color:#f2f7ec !important}
+body.dark-mode .atlas-context p{color:#b8c4a8 !important}
+body.dark-mode .atlas-context-label{color:#6fcf7a !important}
+body.dark-mode .atlas-related a{color:#8fd99a !important}
+@media (max-width:900px){
+  .atlas-layout{grid-template-columns:1fr !important}
+  #research-3d-graph{height:480px !important;min-height:480px !important}
+  .atlas-context{min-height:auto !important}
+}
+/* hide old 2d stage if any leftover */
+.atlas-stage, .atlas-svg, .atlas-nodes{display:none !important}
+
+
+body.dark-mode .main,
+body.dark-mode .container,
+body.dark-mode #main-content{
+  background:#0d100e !important;
+  color:#e8efe0 !important;
+}
+body.dark-mode .research-lede,
+body.dark-mode .section-label{
+  color:#c5d0b8 !important;
+}
+body.dark-mode header,
+body.dark-mode .page-title{
+  color:#f2f7ec !important;
+  background:transparent !important;
 }
 
 </style>
@@ -1448,7 +1106,7 @@ body.dark-mode .paper-disclaimer{
 <li><a href="blog.html" id="nav-blog"><span class="tick"></span>Blog</a></li>
 <li><a href="cv.html" id="nav-cv"><span class="tick"></span>CV</a></li>
 <li><a href="publications.html" id="nav-publications"><span class="tick"></span>Publications</a></li>
-<li><a class="active" href="research.html" id="nav-research"><span class="tick"></span>Research</a></li>
+<li><a href="research.html" class="active" id="nav-research"><span class="tick"></span>Research</a></li>
 <li><a href="achievements.html" id="nav-achievements"><span class="tick"></span>Achievements</a></li>
 <li><a href="side-quests.html" id="nav-quests"><span class="tick"></span>Side quests</a></li>
 
@@ -1501,97 +1159,22 @@ body.dark-mode .paper-disclaimer{
 
 
 <div class="container"><main id="main-content">
-
-
-
-
-
 <div class="page-section active" id="research" style="display:block">
 <h1 class="section-label page-title">Research</h1>
-<p class="research-lede">Hover, focus or tap a research area to reveal its closest connections. Directions I follow, not a claim that every paper below is mine.</p>
-
+<p class="research-lede">Drag to orbit the map. Click a node for the topic and links. Directions I follow in cardiac regenerative science.</p>
 
 <div class="atlas-layout" data-atlas-stage>
-  <div class="atlas-stage">
-<svg class="atlas-svg" data-atlas-svg aria-hidden="true" viewBox="0 0 100 100" preserveAspectRatio="none">
-      <!-- curved paths so edges feel less like a wireframe box -->
-      <path class="atlas-line" data-edge="core recovery" d="M50 48 C 38 40, 28 30, 18 22"/>
-      <path class="atlas-line" data-edge="core tissue" d="M50 48 C 62 40, 72 30, 82 22"/>
-      <path class="atlas-line" data-edge="core ipsc" d="M50 48 C 38 56, 28 68, 18 78"/>
-      <path class="atlas-line" data-edge="core tools" d="M50 48 C 62 56, 72 68, 82 78"/>
-      <path class="atlas-line" data-edge="recovery tissue" d="M18 22 C 40 14, 60 14, 82 22"/>
-      <path class="atlas-line" data-edge="ipsc tools" d="M18 78 C 40 86, 60 86, 82 78"/>
-      <path class="atlas-line" data-edge="recovery ipsc" d="M18 22 C 12 40, 12 60, 18 78"/>
-      <path class="atlas-line" data-edge="tissue tools" d="M82 22 C 88 40, 88 60, 82 78"/>
-    </svg>
-    <div class="atlas-nodes" data-atlas-nodes>
-      <button class="atlas-node atlas-core active" type="button" style="left:50%;top:48%" data-atlas-node="core" aria-pressed="true">
-        <b>00 · Shared problem</b>
-        <span>Heart after injury</span>
-      </button>
-      <button class="atlas-node" type="button" style="left:18%;top:22%" data-atlas-node="recovery" aria-pressed="false">
-        <b>01 · Post-injury</b>
-        <span>Recovery</span>
-      </button>
-      <button class="atlas-node" type="button" style="left:82%;top:22%" data-atlas-node="tissue" aria-pressed="false">
-        <b>02 · Engineering</b>
-        <span>Tissue eng.</span>
-      </button>
-      <button class="atlas-node" type="button" style="left:18%;top:78%" data-atlas-node="ipsc" aria-pressed="false">
-        <b>03 · Cell therapy</b>
-        <span>iPSC repair</span>
-      </button>
-      <button class="atlas-node" type="button" style="left:82%;top:78%" data-atlas-node="tools" aria-pressed="false">
-        <b>04 · Translation</b>
-        <span>Virelion tools</span>
-      </button>
-    </div>
-  </div>
+  <div id="research-3d-graph" role="img" aria-label="Interactive 3D research topic map"></div>
   <aside class="atlas-context" data-atlas-context aria-live="polite">
-    <p class="atlas-context-label">00 · Shared problem</p>
-    <h2>Heart after injury</h2>
-    <p>Everything here orbits one clinical fact: after injury, the adult heart mostly scars. The work is about models and tools that push recovery instead.</p>
-    <div class="atlas-related"><b>Connected work</b>
-      <a href="https://doi.org/10.5281/zenodo.22680867" target="_blank" rel="noopener noreferrer">Platform architecture (Zenodo) ↗</a>
-      <a href="https://github.com/Virelion-Biotech" target="_blank" rel="noopener noreferrer">Virelion Biotech org ↗</a>
-    </div>
+    <p class="atlas-context-label">Shared problem</p>
+    <h2>Shared problem</h2>
+    <p>After injury the adult heart mostly scars. Click a node in the 3D map for recovery biology, tissue engineering, cell therapy, models, electrophysiology, fibrosis, and open tools.</p>
   </aside>
 </div>
-<div class="section-label" style="margin-top:2rem">Papers in these areas</div>
-<p class="paper-disclaimer">These are landmark or representative papers in the fields I follow. They are not my publications. For my own records, see <a href="publications.html">Publications</a>.</p>
-<div class="paper-strip">
-  <a class="paper-row" href="https://doi.org/10.1038/nature13233" target="_blank" rel="noopener noreferrer">
-    <span class="paper-tag">Cell therapy</span>
-    <span class="paper-title">hESC-derived cardiomyocytes regenerate non-human primate hearts</span>
-    <span class="paper-meta">Nature · Chong et al. · 2014</span>
-  </a>
-  <a class="paper-row" href="https://doi.org/10.1038/nature25771" target="_blank" rel="noopener noreferrer">
-    <span class="paper-tag">Maturation</span>
-    <span class="paper-title">Advanced maturation of human cardiac tissue from pluripotent stem cells</span>
-    <span class="paper-meta">Nature · Ronaldson-Bouchard et al. · 2018</span>
-  </a>
-  <a class="paper-row" href="https://doi.org/10.1038/nm1394" target="_blank" rel="noopener noreferrer">
-    <span class="paper-tag">Tissue eng.</span>
-    <span class="paper-title">Engineered heart tissue grafts improve function in infarcted hearts</span>
-    <span class="paper-meta">Nat Med · Zimmermann et al.</span>
-  </a>
-  <a class="paper-row" href="https://doi.org/10.1016/j.cell.2021.04.034" target="_blank" rel="noopener noreferrer">
-    <span class="paper-tag">Organoids</span>
-    <span class="paper-title">Cardioids reveal self-organizing principles of human cardiogenesis</span>
-    <span class="paper-meta">Cell · Hofbauer et al. · 2021</span>
-  </a>
-  <a class="paper-row" href="https://doi.org/10.1038/nature11044" target="_blank" rel="noopener noreferrer">
-    <span class="paper-tag">Reprogramming</span>
-    <span class="paper-title">In vivo reprogramming of cardiac fibroblasts into cardiomyocytes</span>
-    <span class="paper-meta">Nature · Qian / Srivastava</span>
-  </a>
-</div>
 
 
-
-<div class="section-label" style="margin-top:2.2rem">Virelion tools</div>
-<p class="research-lede" style="margin-bottom:0.85rem">Open infrastructure for cardiac evidence, measurement, evaluation, and orchestration. Early-stage research software — not clinical products.</p>
-
+<div class="section-label" style="margin-top:2rem">Virelion tools</div>
+<p class="research-lede" style="margin-bottom:0.75rem">Open infrastructure for cardiac evidence, measurement, evaluation, and orchestration. Early-stage research software — not clinical products.</p>
 <div class="tools-prompt-wrap">
   <button type="button" class="tools-prompt" id="tools-prompt" aria-expanded="false" aria-controls="tools-panel">
     <span class="tools-prompt-icon" aria-hidden="true">⚙</span>
@@ -1601,59 +1184,23 @@ body.dark-mode .paper-disclaimer{
     </span>
     <span class="tools-prompt-chevron" aria-hidden="true">▾</span>
   </button>
-
   <div class="tools-panel" id="tools-panel" hidden>
     <div class="virelion-stack-grid">
-      <a class="vs-card" href="https://github.com/Virelion-Biotech/Virelion-CardiAtlas" target="_blank" rel="noopener noreferrer">
-        <div class="vs-layer">Evidence</div>
-        <div class="vs-name">CardiAtlas</div>
-        <div class="vs-desc">Structured cardiac literature, phenotypes, datasets, and provenance</div>
-      </a>
-      <a class="vs-card" href="https://github.com/Virelion-Biotech/Virelion-CardiStudio" target="_blank" rel="noopener noreferrer">
-        <div class="vs-layer">Design</div>
-        <div class="vs-name">CardiStudio</div>
-        <div class="vs-desc">Experimental design, synthetic populations, power planning</div>
-      </a>
-      <a class="vs-card" href="https://github.com/Virelion-Biotech/Virelion-ElectroTrace" target="_blank" rel="noopener noreferrer">
-        <div class="vs-layer">Measure</div>
-        <div class="vs-name">ElectroTrace</div>
-        <div class="vs-desc">ECG annotation, segmentation, phenotyping, leakage-safe ML</div>
-      </a>
-      <a class="vs-card" href="https://github.com/Virelion-Biotech/Virelion-MyoTrace" target="_blank" rel="noopener noreferrer">
-        <div class="vs-layer">Measure</div>
-        <div class="vs-name">MyoTrace</div>
-        <div class="vs-desc">Motion and beat-level features from cardiac video / TIFF</div>
-      </a>
-      <a class="vs-card" href="https://github.com/Virelion-Biotech/Virelion-CardioScore" target="_blank" rel="noopener noreferrer">
-        <div class="vs-layer">Evaluate</div>
-        <div class="vs-name">CardioScore</div>
-        <div class="vs-desc">iPSC-CM MEA risk scoring (research framework, not a regulatory assay)</div>
-      </a>
-      <a class="vs-card" href="https://github.com/Virelion-Biotech/Virelion-CardiBench" target="_blank" rel="noopener noreferrer">
-        <div class="vs-layer">Evaluate</div>
-        <div class="vs-name">CardiBench</div>
-        <div class="vs-desc">Versioned benchmarks and dataset registry for cardiac AI</div>
-      </a>
-      <a class="vs-card" href="https://github.com/Virelion-Biotech/Virelion-HeartTwin" target="_blank" rel="noopener noreferrer">
-        <div class="vs-layer">Orchestrate</div>
-        <div class="vs-name">HeartTwin</div>
-        <div class="vs-desc">Integration layer: contracts, adapters, workflow composition</div>
-      </a>
-      <a class="vs-card" href="https://github.com/Virelion-Biotech/Cardiac-Regenerative-Lab-Autocrawler" target="_blank" rel="noopener noreferrer">
-        <div class="vs-layer">Intelligence</div>
-        <div class="vs-name">Autocrawler</div>
-        <div class="vs-desc">Maps global cardiac regeneration labs, grants, trials, patents</div>
-      </a>
+      <a class="vs-card" href="https://github.com/Virelion-Biotech/Virelion-CardiAtlas" target="_blank" rel="noopener noreferrer"><div class="vs-layer">Evidence</div><div class="vs-name">CardiAtlas</div><div class="vs-desc">Structured cardiac literature, phenotypes, datasets, and provenance</div></a>
+      <a class="vs-card" href="https://github.com/Virelion-Biotech/Virelion-CardiStudio" target="_blank" rel="noopener noreferrer"><div class="vs-layer">Design</div><div class="vs-name">CardiStudio</div><div class="vs-desc">Experimental design, synthetic populations, power planning</div></a>
+      <a class="vs-card" href="https://github.com/Virelion-Biotech/Virelion-ElectroTrace" target="_blank" rel="noopener noreferrer"><div class="vs-layer">Measure</div><div class="vs-name">ElectroTrace</div><div class="vs-desc">ECG annotation, segmentation, phenotyping, leakage-safe ML</div></a>
+      <a class="vs-card" href="https://github.com/Virelion-Biotech/Virelion-MyoTrace" target="_blank" rel="noopener noreferrer"><div class="vs-layer">Measure</div><div class="vs-name">MyoTrace</div><div class="vs-desc">Motion and beat-level features from cardiac video / TIFF</div></a>
+      <a class="vs-card" href="https://github.com/Virelion-Biotech/Virelion-CardioScore" target="_blank" rel="noopener noreferrer"><div class="vs-layer">Evaluate</div><div class="vs-name">CardioScore</div><div class="vs-desc">iPSC-CM MEA risk scoring (research framework, not a regulatory assay)</div></a>
+      <a class="vs-card" href="https://github.com/Virelion-Biotech/Virelion-CardiBench" target="_blank" rel="noopener noreferrer"><div class="vs-layer">Evaluate</div><div class="vs-name">CardiBench</div><div class="vs-desc">Versioned benchmarks and dataset registry for cardiac AI</div></a>
+      <a class="vs-card" href="https://github.com/Virelion-Biotech/Virelion-HeartTwin" target="_blank" rel="noopener noreferrer"><div class="vs-layer">Orchestrate</div><div class="vs-name">HeartTwin</div><div class="vs-desc">Integration layer: contracts, adapters, workflow composition</div></a>
+      <a class="vs-card" href="https://github.com/Virelion-Biotech/Cardiac-Regenerative-Lab-Autocrawler" target="_blank" rel="noopener noreferrer"><div class="vs-layer">Intelligence</div><div class="vs-name">Autocrawler</div><div class="vs-desc">Maps global cardiac regeneration labs, grants, trials, patents</div></a>
     </div>
     <p class="stack-foot">Full org and remaining modules: <a href="https://github.com/Virelion-Biotech" target="_blank" rel="noopener noreferrer">github.com/Virelion-Biotech</a> · architecture <a href="https://doi.org/10.5281/zenodo.22680867" target="_blank" rel="noopener noreferrer">Zenodo DOI</a></p>
   </div>
 </div>
-
-
 </div>
-</div>
-
-<footer>© 2026 Syed Umer Hannan  ·  Cardiac Regenerative Scientist</footer>
+</main>
+<footer>© 2026 Syed Umer Hannan</footer>
 
 </div>
 
@@ -1675,230 +1222,200 @@ var el=document.getElementById('last-updated-date'); if(el) el.textContent='Sep 
 
 </script>
 
-<script>
-(function(){
-  var DATA = {
-    "01": {
-      num: "01",
-      title: "Post-injury recovery",
-      body: "How the heart remodels after damage — fibrosis, scar, and the signals that decide whether function returns. Aim: shift healing toward recovery instead of permanent scar.",
-      tags: ["Paracrine","Metabolism","Cell cycle"],
-      link: null
-    },
-    "02": {
-      num: "02",
-      title: "Cardiac tissue engineering",
-      body: "Patches, organoids, and scaffolds that can support or replace damaged muscle. From bioreactor-scale production toward implantation studies.",
-      tags: ["Organoids","EHT","Scaffolds"],
-      link: null
-    },
-    "03": {
-      num: "03",
-      title: "Stem cell–derived myocardial repair",
-      body: "iPSC-derived cardiomyocytes for replacement or support after injury: differentiation, engraftment, and integration with host tissue — with scale and safety in view.",
-      tags: ["iPSC-CM","Engraftment","Safety"],
-      link: null
-    },
-    "04": {
-      num: "04",
-      title: "Virelion tools & translation",
-      body: "A modular open stack for cardiac evidence (CardiAtlas), design (CardiStudio), measurement (ElectroTrace, MyoTrace), evaluation (CardioScore, CardiBench), and orchestration (HeartTwin). Autocrawler maps the lab landscape. Research software in active development — not clinical products.",
-      tags: ["HeartTwin","ElectroTrace","CardiAtlas","Open source"],
-      link: {href:"https://github.com/Virelion-Biotech", text:"Virelion on GitHub →"}
-    },
-    "core": {
-      num: "CORE",
-      title: "The shared problem",
-      body: "Everything here orbits one clinical fact: after injury, the adult heart mostly scars. The work is about models and tools that push recovery instead.",
-      tags: ["Cardiology","Regeneration"],
-      link: null
-    }
-  };
-
-  var panel = document.getElementById('constellation-panel');
-  if(!panel) return;
-  var numEl = document.getElementById('panel-num');
-  var titleEl = document.getElementById('panel-title');
-  var bodyEl = document.getElementById('panel-body');
-  var tagsEl = document.getElementById('panel-tags');
-  var linkEl = document.getElementById('panel-link');
-  var closeBtn = document.getElementById('panel-close');
-  var activeId = null;
-
-  function show(id){
-    var d = DATA[id];
-    if(!d) return;
-    activeId = id;
-    numEl.textContent = d.num;
-    titleEl.textContent = d.title;
-    bodyEl.textContent = d.body;
-    tagsEl.innerHTML = d.tags.map(function(t){ return '<span>'+t+'</span>'; }).join('');
-    if(d.link){
-      linkEl.innerHTML = '<a href="'+d.link.href+'" target="_blank" rel="noopener noreferrer">'+d.link.text+'</a>';
-    } else {
-      linkEl.innerHTML = '';
-    }
-    panel.hidden = false;
-    document.querySelectorAll('.node-orbit').forEach(function(n){
-      n.classList.toggle('is-active', n.getAttribute('data-id') === id);
-    });
-    document.querySelectorAll('.edge').forEach(function(e){
-      e.classList.toggle('is-hot', e.getAttribute('data-to') === id);
-    });
-  }
-
-  function hide(){
-    activeId = null;
-    panel.hidden = true;
-    document.querySelectorAll('.node-orbit').forEach(function(n){ n.classList.remove('is-active'); });
-    document.querySelectorAll('.edge').forEach(function(e){ e.classList.remove('is-hot'); });
-  }
-
-  document.querySelectorAll('.node-orbit, .node-core').forEach(function(node){
-    var id = node.getAttribute('data-id');
-    node.addEventListener('click', function(e){
-      e.preventDefault();
-      if(activeId === id) hide(); else show(id);
-    });
-    node.addEventListener('keydown', function(e){
-      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); if(activeId === id) hide(); else show(id); }
-    });
-    // desktop hover preview
-    node.addEventListener('mouseenter', function(){
-      if(window.matchMedia('(hover:hover)').matches && !activeId) show(id);
-    });
-  });
-
-  if(closeBtn) closeBtn.addEventListener('click', hide);
-  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') hide(); });
-})();
-</script>
-
 
 <script>
 (function(){
-  var promptBtn = document.getElementById('tools-prompt');
-  var panel = document.getElementById('tools-panel');
-  if(!promptBtn || !panel) return;
-
-  function openTools(){
-    panel.hidden = false;
-    promptBtn.setAttribute('aria-expanded', 'true');
-    promptBtn.classList.add('is-open');
-    panel.scrollIntoView({behavior:'smooth', block:'nearest'});
+  function esc(s){return String(s||'').replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+  function classify(p){
+    var t=(p.type||'').toLowerCase(), title=(p.title||'').toLowerCase(), doi=(p.doi||'').toLowerCase();
+    if(t==='dataset') return 'dataset';
+    if(t==='software' || title.indexOf('electrotrace')>=0) return 'software';
+    if(t==='preprint' || doi.indexOf('rs.3.rs')>=0 || title.indexOf('partial identification')>=0) return 'preprint';
+    if(title.indexOf('virelion')>=0) return 'other';
+    if(doi.indexOf('cureus')>=0 || doi.indexOf('rd9')>=0 || title.indexOf('ovarian')>=0 || title.indexOf('kikuchi')>=0) return 'peer';
+    if(title.indexOf('elfn2')>=0 || title.indexOf('tdp-43')>=0) return 'preprint';
+    if(t==='publication') return 'peer';
+    return 'other';
   }
-  function closeTools(){
-    panel.hidden = true;
-    promptBtn.setAttribute('aria-expanded', 'false');
-    promptBtn.classList.remove('is-open');
-  }
-  function toggleTools(){
-    if(panel.hidden) openTools(); else closeTools();
-  }
-
-  promptBtn.addEventListener('click', toggleTools);
-
-  // Constellation "Tools" node opens the stack
-  document.querySelectorAll('.node-orbit[data-id="04"]').forEach(function(node){
-    node.addEventListener('click', function(){
-      // slight delay so constellation panel can show first
-      setTimeout(openTools, 180);
-    });
-  });
-
-  // Deep link ?tools=1
-  if(location.search.indexOf('tools=1') !== -1 || location.hash === '#tools'){
-    openTools();
-  }
-
-  window.openVirelionTools = openTools;
-})();
-</script>
-
-
-<script>
-(function(){
-  var DATA = {
-    core: {
-      num: "00", kicker: "Shared problem", title: "Heart after injury",
-      body: "Everything here orbits one clinical fact: after injury, the adult heart mostly scars. The work is about models and tools that push recovery instead.",
-      links: [
-        {href:"https://doi.org/10.5281/zenodo.22680867", text:"Platform architecture (Zenodo) ↗"},
-        {href:"https://github.com/Virelion-Biotech", text:"Virelion Biotech org ↗"}
-      ]
-    },
-    recovery: {
-      num: "01", kicker: "Post-injury", title: "Recovery",
-      body: "How the heart remodels after damage — fibrosis, scar, and the signals that decide whether function returns. Aim: shift healing toward recovery instead of permanent scar.",
-      links: [
-        {href:"https://doi.org/10.1038/nature13233", text:"hESC-CM regeneration in primates (Nature) ↗"},
-        {href:"https://doi.org/10.1038/nature11044", text:"In vivo fibroblast reprogramming (Nature) ↗"}
-      ]
-    },
-    tissue: {
-      num: "02", kicker: "Engineering", title: "Tissue engineering",
-      body: "Patches, organoids, and scaffolds that can support or replace damaged muscle. From bioreactor-scale production toward implantation studies.",
-      links: [
-        {href:"https://doi.org/10.1038/nm1394", text:"Engineered heart tissue grafts (Nat Med) ↗"},
-        {href:"https://doi.org/10.1016/j.cell.2021.04.034", text:"Cardioids / self-organizing cardiogenesis (Cell) ↗"}
-      ]
-    },
-    ipsc: {
-      num: "03", kicker: "Cell therapy", title: "iPSC myocardial repair",
-      body: "iPSC-derived cardiomyocytes for replacement or support after injury: differentiation, engraftment, and integration with host tissue — with scale and safety in view.",
-      links: [
-        {href:"https://doi.org/10.1038/nature25771", text:"Advanced maturation of cardiac tissue (Nature) ↗"},
-        {href:"https://doi.org/10.1038/nature13233", text:"Primate regeneration study (Nature) ↗"}
-      ]
-    },
-    tools: {
-      num: "04", kicker: "Translation", title: "Virelion tools",
-      body: "Modular open stack for cardiac evidence, measurement, evaluation, and orchestration (HeartTwin). Research software in active development — not clinical products.",
-      links: [
-        {href:"https://github.com/Virelion-Biotech", text:"Full Virelion org on GitHub ↗"},
-        {href:"https://github.com/Virelion-Biotech/Virelion-ElectroTrace", text:"ElectroTrace ↗"},
-        {href:"https://github.com/Virelion-Biotech/Virelion-HeartTwin", text:"HeartTwin ↗"}
-      ]
+  var labels={peer:'Peer-reviewed',preprint:'Preprints',dataset:'Datasets',software:'Software',other:'Other open records'};
+  var order=['peer','preprint','dataset','software','other'];
+  fetch('data/publications.json?t='+Date.now()).then(function(r){return r.json();}).then(function(data){
+    var el=document.getElementById('pubs-list');
+    var upd=document.getElementById('pubs-updated');
+    if(upd && data.updated) upd.textContent='Metrics refreshed '+data.updated.slice(0,10);
+    if(!el || !(data.papers||[]).length) return;
+    var buckets={peer:[],preprint:[],dataset:[],software:[],other:[]};
+    data.papers.forEach(function(p){ buckets[classify(p)].push(p); });
+    // update summary nums if present
+    var nums=document.querySelectorAll('.pubs-summary-num');
+    if(nums.length>=5){
+      var cites=0; data.papers.forEach(function(p){ cites += (p.citations||0); });
+      nums[0].textContent=String(data.papers.length);
+      nums[1].textContent=String(cites);
+      nums[2].textContent=String(buckets.peer.length);
+      nums[3].textContent=String(buckets.preprint.length);
+      nums[4].textContent=String(buckets.dataset.length);
     }
-  };
-
-  var stage = document.querySelector('[data-atlas-stage]');
-  if(!stage) return;
-  var context = stage.querySelector('[data-atlas-context]');
-  var nodes = stage.querySelectorAll('[data-atlas-node]');
-  var lines = stage.querySelectorAll('[data-edge]');
-
-  function activate(id){
-    var d = DATA[id];
-    if(!d) return;
-    nodes.forEach(function(n){
-      var on = n.getAttribute('data-atlas-node') === id;
-      n.classList.toggle('active', on);
-      n.setAttribute('aria-pressed', on ? 'true' : 'false');
-    });
-    lines.forEach(function(line){
-      var parts = (line.getAttribute('data-edge') || '').split(/\s+/);
-      line.classList.toggle('active', parts.indexOf(id) !== -1);
-    });
-    var links = (d.links || []).map(function(l){
-      return '<a href="'+l.href+'" target="_blank" rel="noopener noreferrer">'+l.text+'</a>';
+    el.innerHTML=order.filter(function(k){return buckets[k].length;}).map(function(k){
+      var cards=buckets[k].map(function(p){
+        var href=p.url||(p.doi?('https://doi.org/'+p.doi):(p.scholar_url||'#'));
+        var meta=[];
+        if(p.type) meta.push(p.type.charAt(0).toUpperCase()+p.type.slice(1));
+        if(p.venue) meta.push(p.venue);
+        if(p.year) meta.push(p.year);
+        var stats=[];
+        if(p.citations!=null) stats.push((p.citations||0)+' citation'+(p.citations===1?'':'s')+(p.citations_source?' ('+p.citations_source+')':''));
+        if(p.reads!=null) stats.push(p.reads+' reads'+(p.reads_source?' ('+p.reads_source+')':''));
+        if(p.downloads!=null) stats.push(p.downloads+' downloads');
+        var body='';
+        if(p.summary) body+='<div class="card-body" style="margin-top:0.45rem">'+esc(p.summary)+'</div>';
+        if(stats.length) body+='<div class="card-body" style="margin-top:0.35rem;opacity:0.9">'+esc(stats.join(' · '))+'</div>';
+        var tags='';
+        if(p.type==='dataset'||p.type==='software') tags+='<div class="card-tag" style="margin-right:0.4rem">'+esc(p.type)+'</div>';
+        if(p.doi) tags+='<div class="card-tag">DOI '+esc(p.doi)+'</div>';
+        return '<a class="card card-link" href="'+esc(href)+'" target="_blank" rel="noopener noreferrer"><div class="card-date">'+esc(meta.join(' · '))+'</div><div class="card-title">'+esc(p.title)+'</div>'+body+tags+'</a>';
+      }).join('');
+      return '<div class="pubs-section" id="pubs-'+k+'"><h2 class="section-label" style="margin-top:1.4rem;margin-bottom:0.9rem">'+esc(labels[k])+'</h2><div class="pubs-section-list">'+cards+'</div></div>';
     }).join('');
-    context.innerHTML =
-      '<p class="atlas-context-label">'+d.num+' · '+d.kicker+'</p>'+
-      '<h2>'+d.title+'</h2>'+
-      '<p>'+d.body+'</p>'+
-      '<div class="atlas-related"><b>Connected work</b>'+links+'</div>';
-    // open tools stack when tools node selected
-    if(id === 'tools' && typeof window.openVirelionTools === 'function'){
-      setTimeout(window.openVirelionTools, 200);
+  }).catch(function(){});
+})();
+</script>
+
+
+
+<script>
+
+(function(){
+  var btn = document.getElementById('tools-prompt');
+  var panel = document.getElementById('tools-panel');
+  if(!btn || !panel) return;
+  function open(){ panel.hidden = false; btn.setAttribute('aria-expanded','true'); }
+  function close(){ panel.hidden = true; btn.setAttribute('aria-expanded','false'); }
+  window.openVirelionTools = open;
+  btn.addEventListener('click', function(){
+    if(panel.hidden) open(); else close();
+  });
+})();
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/3d-force-graph@1.73.3/dist/3d-force-graph.min.js"></script>
+<script>
+(function(){
+  var META = {
+    core: { title: "Shared problem", body: "After injury the adult heart mostly scars. The areas around this node are the parts of that problem I follow most closely.", links: [] },
+    recovery: { title: "Post-injury recovery", body: "Remodeling after damage: what limits return of function, and which signals push tissue toward recovery instead of permanent scar.", links: [{href:"https://doi.org/10.1038/nature11139", text:"Neonatal heart regeneration (Nature) ↗"}] },
+    tissue: { title: "Tissue engineering", body: "Engineered heart tissue, patches, organoids, and scaffolds — building contractile tissue and asking how it integrates after implantation.", links: [{href:"https://doi.org/10.1038/s41551-018-0271-5", text:"Engineered heart muscle (Nat Biomed Eng) ↗"}] },
+    ipsc: { title: "iPSC cell therapy", body: "iPSC-derived cardiomyocytes for replacement or support: differentiation, maturation, engraftment, and safety constraints at scale.", links: [{href:"https://doi.org/10.1038/nature25771", text:"Advanced maturation of cardiac tissue (Nature) ↗"},{href:"https://doi.org/10.1038/nature13233", text:"Primate regeneration study (Nature) ↗"}] },
+    modeling: { title: "Mathematical models", body: "Systems and mathematical models of regeneration, assay endpoints, and partial identification when experiments alone are underdetermined.", links: [{href:"publications.html", text:"Open modeling records →"}] },
+    ep: { title: "Electrophysiology", body: "Conduction, activation patterns, and MEA phenotyping of stem-cell-derived myocytes. Measurement links model to tissue.", links: [{href:"https://github.com/Virelion-Biotech/Virelion-ElectroTrace", text:"ElectroTrace ↗"}] },
+    fibrosis: { title: "Fibrosis & scar", body: "Fibroblast activation, matrix remodeling, and the trade-off between structural stability and lost contractility after injury.", links: [] },
+    tools: { title: "Open tools", body: "The Virelion stack: evidence, measurement, evaluation, and orchestration modules for cardiac regenerative research. Research software, not clinical products.", links: [{href:"https://github.com/Virelion-Biotech", text:"Virelion on GitHub ↗"}] }
+  };
+
+  var nodes = [
+    { id: "core", name: "Shared problem", group: 0, val: 8 },
+    { id: "recovery", name: "Post-injury recovery", group: 1, val: 5 },
+    { id: "tissue", name: "Tissue engineering", group: 1, val: 5 },
+    { id: "ipsc", name: "iPSC cell therapy", group: 1, val: 5 },
+    { id: "modeling", name: "Mathematical models", group: 1, val: 5 },
+    { id: "ep", name: "Electrophysiology", group: 1, val: 5 },
+    { id: "fibrosis", name: "Fibrosis & scar", group: 1, val: 5 },
+    { id: "tools", name: "Open tools", group: 2, val: 6 }
+  ];
+  var links = [];
+  var ids = nodes.map(function(n){ return n.id; });
+  for (var i = 0; i < ids.length; i++) {
+    for (var j = i + 1; j < ids.length; j++) {
+      links.push({ source: ids[i], target: ids[j] });
     }
   }
 
-  nodes.forEach(function(node){
-    var id = node.getAttribute('data-atlas-node');
-    node.addEventListener('pointerenter', function(){ activate(id); });
-    node.addEventListener('focus', function(){ activate(id); });
-    node.addEventListener('click', function(){ activate(id); });
+  var context = document.querySelector("[data-atlas-context]");
+  function showPanel(id) {
+    var d = META[id];
+    if (!d || !context) return;
+    var linksHtml = (d.links || []).map(function(l) {
+      return '<a href="' + l.href + '" target="_blank" rel="noopener noreferrer">' + l.text + "</a>";
+    }).join("");
+    context.innerHTML =
+      '<p class="atlas-context-label">' + d.title + "</p>" +
+      "<h2>" + d.title + "</h2>" +
+      "<p>" + d.body + "</p>" +
+      (linksHtml ? '<div class="atlas-related"><b>Connected work</b>' + linksHtml + "</div>" : "");
+    if (id === "tools" && typeof window.openVirelionTools === "function") {
+      window.openVirelionTools();
+    }
+  }
+
+  var el = document.getElementById("research-3d-graph");
+  if (!el || typeof ForceGraph3D === "undefined") return;
+
+  var Graph = ForceGraph3D()(el)
+    .graphData({ nodes: nodes, links: links })
+    .backgroundColor("#0b120e")
+    .showNavInfo(false)
+    .nodeLabel("name")
+    .nodeRelSize(3.2)
+    .nodeVal(function(n){ return n.id === "core" ? 8 : (n.id === "tools" ? 6 : 5); })
+    .nodeResolution(24)
+    .nodeOpacity(0.92)
+    .nodeColor(function(n) {
+      var map = {
+        core: "#e8c547",
+        recovery: "#3d9a5c",
+        tissue: "#2a8f9a",
+        ipsc: "#4caf75",
+        modeling: "#6b8fd4",
+        ep: "#c45c3e",
+        fibrosis: "#a67c52",
+        tools: "#8fd99a"
+      };
+      return map[n.id] || "#3d9a5c";
+    })
+    .linkColor(function(){ return "rgba(180, 220, 190, 0.75)"; })
+    .linkWidth(1.15)
+    .linkOpacity(0.85)
+    .linkDirectionalParticles(0)
+    .onNodeClick(function(node) {
+      showPanel(node.id);
+      var dist = 120;
+      var hx = Math.hypot(node.x || 1, node.y || 1, node.z || 1) || 1;
+      var distRatio = 1 + dist / hx;
+      Graph.cameraPosition(
+        { x: (node.x || 0) * distRatio, y: (node.y || 0) * distRatio, z: (node.z || 0) * distRatio },
+        node,
+        1000
+      );
+    })
+    .onNodeHover(function(node) {
+      el.style.cursor = node ? "pointer" : "grab";
+    });
+
+  // fit
+  
+  // spread nodes so spheres do not pile up
+  Graph.d3Force("charge").strength(-180);
+  Graph.d3Force("link").distance(55);
+  Graph.d3Force("center").strength(0.35);
+
+  setTimeout(function() {
+    try { Graph.zoomToFit(700, 60); } catch (e) {}
+  }, 900);
+
+  // dark mode sync
+  function syncBg() {
+    var dark = document.body.classList.contains("dark-mode");
+    Graph.backgroundColor(dark ? "#050806" : "#0b120e");
+  }
+  syncBg();
+  var obs = new MutationObserver(syncBg);
+  obs.observe(document.body, { attributes: true, attributeFilter: ["class"] });
+
+  // resize
+  window.addEventListener("resize", function() {
+    Graph.width(el.clientWidth);
+    Graph.height(el.clientHeight);
   });
 })();
 </script>
